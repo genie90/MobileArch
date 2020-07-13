@@ -8,8 +8,11 @@
 
 #import "SceneDelegate.h"
 #import "AppDelegate.h"
+#import "GEAppCoordinator.h"
 
 @interface SceneDelegate ()
+
+@property (strong, nonatomic) GEAppCoordinator *appCoordinator;
 
 @end
 
@@ -20,6 +23,18 @@
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+
+    if ([scene isKindOfClass:UIWindowScene.class]) {
+        UINavigationController *navController = [[UINavigationController alloc] init];
+        self.appCoordinator = [[GEAppCoordinator alloc] initWithNavigationController:navController];
+        [self.appCoordinator start];
+        
+        UIWindowScene *uiWindowScene = (UIWindowScene*)scene;
+        self.window = [[UIWindow alloc] initWithWindowScene:uiWindowScene];
+        [self.window setRootViewController:navController];
+        [self.window makeKeyAndVisible];
+    }
+    
 }
 
 

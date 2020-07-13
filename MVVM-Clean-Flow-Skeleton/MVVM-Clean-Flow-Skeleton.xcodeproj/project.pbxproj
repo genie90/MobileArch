@@ -3,15 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		413CFF14B12755668D647F82 /* Pods_MVVM_Clean_Flow_Skeleton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077EE782D011D71F2393CC11 /* Pods_MVVM_Clean_Flow_Skeleton.framework */; };
+		F66B5A6E24BC077B00CCA0F2 /* AUGELoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66B5A6D24BC077B00CCA0F2 /* AUGELoginViewController.xib */; };
+		F66B5A7124BC08D400CCA0F2 /* AUGELoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A7024BC08D400CCA0F2 /* AUGELoginViewController.m */; };
+		F66B5A7624BC0A3600CCA0F2 /* GEAppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A7524BC0A3600CCA0F2 /* GEAppCoordinator.m */; };
+		F66B5A8224BC319100CCA0F2 /* AUGERegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A8024BC319100CCA0F2 /* AUGERegisterViewController.m */; };
+		F66B5A8324BC319100CCA0F2 /* AUGERegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66B5A8124BC319100CCA0F2 /* AUGERegisterViewController.xib */; };
+		F66B5A8824BC327B00CCA0F2 /* GEAppCoordinator+GEAuthDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A8724BC327B00CCA0F2 /* GEAppCoordinator+GEAuthDelegate.m */; };
+		F66B5A8D24BC364300CCA0F2 /* AUGEAuthCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A8C24BC364300CCA0F2 /* AUGEAuthCoordinator.m */; };
+		F66B5A9224BC4DBF00CCA0F2 /* AUGELoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A9124BC4DBF00CCA0F2 /* AUGELoginViewModel.m */; };
 		F6E06F1C24BBFAAA00EE95E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E06F1B24BBFAAA00EE95E9 /* AppDelegate.m */; };
 		F6E06F1F24BBFAAA00EE95E9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E06F1E24BBFAAA00EE95E9 /* SceneDelegate.m */; };
-		F6E06F2224BBFAAA00EE95E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E06F2124BBFAAA00EE95E9 /* ViewController.m */; };
-		F6E06F2524BBFAAA00EE95E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E06F2324BBFAAA00EE95E9 /* Main.storyboard */; };
 		F6E06F2824BBFAAA00EE95E9 /* MVVM_Clean_Flow_Skeleton.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6E06F2624BBFAAA00EE95E9 /* MVVM_Clean_Flow_Skeleton.xcdatamodeld */; };
 		F6E06F2A24BBFAAC00EE95E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6E06F2924BBFAAC00EE95E9 /* Assets.xcassets */; };
 		F6E06F2D24BBFAAC00EE95E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E06F2B24BBFAAC00EE95E9 /* LaunchScreen.storyboard */; };
@@ -22,14 +28,27 @@
 		077EE782D011D71F2393CC11 /* Pods_MVVM_Clean_Flow_Skeleton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Clean_Flow_Skeleton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F5E38CE6E7978DD281B5C0D /* Pods-MVVM-Clean-Flow-Skeleton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-Clean-Flow-Skeleton.release.xcconfig"; path = "Target Support Files/Pods-MVVM-Clean-Flow-Skeleton/Pods-MVVM-Clean-Flow-Skeleton.release.xcconfig"; sourceTree = "<group>"; };
 		2549BD7276D30465FCFB34D6 /* Pods-MVVM-Clean-Flow-Skeleton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-Clean-Flow-Skeleton.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-Clean-Flow-Skeleton/Pods-MVVM-Clean-Flow-Skeleton.debug.xcconfig"; sourceTree = "<group>"; };
+		F66B5A6D24BC077B00CCA0F2 /* AUGELoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AUGELoginViewController.xib; sourceTree = "<group>"; };
+		F66B5A6F24BC08A100CCA0F2 /* AUGELoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUGELoginViewController.h; sourceTree = "<group>"; };
+		F66B5A7024BC08D400CCA0F2 /* AUGELoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AUGELoginViewController.m; sourceTree = "<group>"; };
+		F66B5A7324BC095200CCA0F2 /* GECoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GECoordinator.h; sourceTree = "<group>"; };
+		F66B5A7424BC09F700CCA0F2 /* GEAppCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEAppCoordinator.h; sourceTree = "<group>"; };
+		F66B5A7524BC0A3600CCA0F2 /* GEAppCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEAppCoordinator.m; sourceTree = "<group>"; };
+		F66B5A7F24BC319100CCA0F2 /* AUGERegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUGERegisterViewController.h; sourceTree = "<group>"; };
+		F66B5A8024BC319100CCA0F2 /* AUGERegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AUGERegisterViewController.m; sourceTree = "<group>"; };
+		F66B5A8124BC319100CCA0F2 /* AUGERegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AUGERegisterViewController.xib; sourceTree = "<group>"; };
+		F66B5A8624BC327B00CCA0F2 /* GEAppCoordinator+GEAuthDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GEAppCoordinator+GEAuthDelegate.h"; sourceTree = "<group>"; };
+		F66B5A8724BC327B00CCA0F2 /* GEAppCoordinator+GEAuthDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GEAppCoordinator+GEAuthDelegate.m"; sourceTree = "<group>"; };
+		F66B5A8C24BC364300CCA0F2 /* AUGEAuthCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AUGEAuthCoordinator.m; sourceTree = "<group>"; };
+		F66B5A8E24BC364F00CCA0F2 /* AUGEAuthCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUGEAuthCoordinator.h; sourceTree = "<group>"; };
+		F66B5A8F24BC451300CCA0F2 /* AUGELoginDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUGELoginDelegate.h; sourceTree = "<group>"; };
+		F66B5A9024BC4DBF00CCA0F2 /* AUGELoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUGELoginViewModel.h; sourceTree = "<group>"; };
+		F66B5A9124BC4DBF00CCA0F2 /* AUGELoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AUGELoginViewModel.m; sourceTree = "<group>"; };
 		F6E06F1724BBFAAA00EE95E9 /* MVVM-Clean-Flow-Skeleton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Clean-Flow-Skeleton.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E06F1A24BBFAAA00EE95E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F6E06F1B24BBFAAA00EE95E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F6E06F1D24BBFAAA00EE95E9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		F6E06F1E24BBFAAA00EE95E9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		F6E06F2024BBFAAA00EE95E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F6E06F2124BBFAAA00EE95E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F6E06F2424BBFAAA00EE95E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6E06F2724BBFAAA00EE95E9 /* MVVM_Clean_Flow_Skeleton.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVVM_Clean_Flow_Skeleton.xcdatamodel; sourceTree = "<group>"; };
 		F6E06F2924BBFAAC00EE95E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6E06F2C24BBFAAC00EE95E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +74,6 @@
 				2549BD7276D30465FCFB34D6 /* Pods-MVVM-Clean-Flow-Skeleton.debug.xcconfig */,
 				0F5E38CE6E7978DD281B5C0D /* Pods-MVVM-Clean-Flow-Skeleton.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -65,6 +83,52 @@
 				077EE782D011D71F2393CC11 /* Pods_MVVM_Clean_Flow_Skeleton.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F66B5A6C24BC074300CCA0F2 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				F66B5A8524BC31E700CCA0F2 /* register */,
+				F66B5A8424BC31DE00CCA0F2 /* login */,
+				F66B5A8624BC327B00CCA0F2 /* GEAppCoordinator+GEAuthDelegate.h */,
+				F66B5A8724BC327B00CCA0F2 /* GEAppCoordinator+GEAuthDelegate.m */,
+				F66B5A8E24BC364F00CCA0F2 /* AUGEAuthCoordinator.h */,
+				F66B5A8C24BC364300CCA0F2 /* AUGEAuthCoordinator.m */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		F66B5A7224BC091000CCA0F2 /* coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				F66B5A7324BC095200CCA0F2 /* GECoordinator.h */,
+				F66B5A7424BC09F700CCA0F2 /* GEAppCoordinator.h */,
+				F66B5A7524BC0A3600CCA0F2 /* GEAppCoordinator.m */,
+			);
+			path = coordinators;
+			sourceTree = "<group>";
+		};
+		F66B5A8424BC31DE00CCA0F2 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				F66B5A6D24BC077B00CCA0F2 /* AUGELoginViewController.xib */,
+				F66B5A6F24BC08A100CCA0F2 /* AUGELoginViewController.h */,
+				F66B5A7024BC08D400CCA0F2 /* AUGELoginViewController.m */,
+				F66B5A8F24BC451300CCA0F2 /* AUGELoginDelegate.h */,
+				F66B5A9024BC4DBF00CCA0F2 /* AUGELoginViewModel.h */,
+				F66B5A9124BC4DBF00CCA0F2 /* AUGELoginViewModel.m */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		F66B5A8524BC31E700CCA0F2 /* register */ = {
+			isa = PBXGroup;
+			children = (
+				F66B5A7F24BC319100CCA0F2 /* AUGERegisterViewController.h */,
+				F66B5A8024BC319100CCA0F2 /* AUGERegisterViewController.m */,
+				F66B5A8124BC319100CCA0F2 /* AUGERegisterViewController.xib */,
+			);
+			path = register;
 			sourceTree = "<group>";
 		};
 		F6E06F0E24BBFAAA00EE95E9 = {
@@ -88,13 +152,12 @@
 		F6E06F1924BBFAAA00EE95E9 /* MVVM-Clean-Flow-Skeleton */ = {
 			isa = PBXGroup;
 			children = (
+				F66B5A7224BC091000CCA0F2 /* coordinators */,
+				F66B5A6C24BC074300CCA0F2 /* auth */,
 				F6E06F1A24BBFAAA00EE95E9 /* AppDelegate.h */,
 				F6E06F1B24BBFAAA00EE95E9 /* AppDelegate.m */,
 				F6E06F1D24BBFAAA00EE95E9 /* SceneDelegate.h */,
 				F6E06F1E24BBFAAA00EE95E9 /* SceneDelegate.m */,
-				F6E06F2024BBFAAA00EE95E9 /* ViewController.h */,
-				F6E06F2124BBFAAA00EE95E9 /* ViewController.m */,
-				F6E06F2324BBFAAA00EE95E9 /* Main.storyboard */,
 				F6E06F2924BBFAAC00EE95E9 /* Assets.xcassets */,
 				F6E06F2B24BBFAAC00EE95E9 /* LaunchScreen.storyboard */,
 				F6E06F2E24BBFAAC00EE95E9 /* Info.plist */,
@@ -165,7 +228,8 @@
 			files = (
 				F6E06F2D24BBFAAC00EE95E9 /* LaunchScreen.storyboard in Resources */,
 				F6E06F2A24BBFAAC00EE95E9 /* Assets.xcassets in Resources */,
-				F6E06F2524BBFAAA00EE95E9 /* Main.storyboard in Resources */,
+				F66B5A6E24BC077B00CCA0F2 /* AUGELoginViewController.xib in Resources */,
+				F66B5A8324BC319100CCA0F2 /* AUGERegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +283,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6E06F3024BBFAAC00EE95E9 /* main.m in Sources */,
+				F66B5A7624BC0A3600CCA0F2 /* GEAppCoordinator.m in Sources */,
 				F6E06F2824BBFAAA00EE95E9 /* MVVM_Clean_Flow_Skeleton.xcdatamodeld in Sources */,
-				F6E06F2224BBFAAA00EE95E9 /* ViewController.m in Sources */,
+				F66B5A7124BC08D400CCA0F2 /* AUGELoginViewController.m in Sources */,
+				F66B5A8824BC327B00CCA0F2 /* GEAppCoordinator+GEAuthDelegate.m in Sources */,
+				F66B5A8D24BC364300CCA0F2 /* AUGEAuthCoordinator.m in Sources */,
+				F66B5A8224BC319100CCA0F2 /* AUGERegisterViewController.m in Sources */,
 				F6E06F1C24BBFAAA00EE95E9 /* AppDelegate.m in Sources */,
+				F66B5A9224BC4DBF00CCA0F2 /* AUGELoginViewModel.m in Sources */,
 				F6E06F1F24BBFAAA00EE95E9 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,14 +298,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F6E06F2324BBFAAA00EE95E9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6E06F2424BBFAAA00EE95E9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F6E06F2B24BBFAAC00EE95E9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		413CFF14B12755668D647F82 /* Pods_MVVM_Clean_Flow_Skeleton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077EE782D011D71F2393CC11 /* Pods_MVVM_Clean_Flow_Skeleton.framework */; };
+		F6E06F1C24BBFAAA00EE95E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E06F1B24BBFAAA00EE95E9 /* AppDelegate.m */; };
+		F6E06F1F24BBFAAA00EE95E9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E06F1E24BBFAAA00EE95E9 /* SceneDelegate.m */; };
+		F6E06F2224BBFAAA00EE95E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E06F2124BBFAAA00EE95E9 /* ViewController.m */; };
+		F6E06F2524BBFAAA00EE95E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E06F2324BBFAAA00EE95E9 /* Main.storyboard */; };
+		F6E06F2824BBFAAA00EE95E9 /* MVVM_Clean_Flow_Skeleton.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6E06F2624BBFAAA00EE95E9 /* MVVM_Clean_Flow_Skeleton.xcdatamodeld */; };
+		F6E06F2A24BBFAAC00EE95E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6E06F2924BBFAAC00EE95E9 /* Assets.xcassets */; };
+		F6E06F2D24BBFAAC00EE95E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E06F2B24BBFAAC00EE95E9 /* LaunchScreen.storyboard */; };
+		F6E06F3024BBFAAC00EE95E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E06F2F24BBFAAC00EE95E9 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		077EE782D011D71F2393CC11 /* Pods_MVVM_Clean_Flow_Skeleton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Clean_Flow_Skeleton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F5E38CE6E7978DD281B5C0D /* Pods-MVVM-Clean-Flow-Skeleton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-Clean-Flow-Skeleton.release.xcconfig"; path = "Target Support Files/Pods-MVVM-Clean-Flow-Skeleton/Pods-MVVM-Clean-Flow-Skeleton.release.xcconfig"; sourceTree = "<group>"; };
+		2549BD7276D30465FCFB34D6 /* Pods-MVVM-Clean-Flow-Skeleton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-Clean-Flow-Skeleton.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-Clean-Flow-Skeleton/Pods-MVVM-Clean-Flow-Skeleton.debug.xcconfig"; sourceTree = "<group>"; };
+		F6E06F1724BBFAAA00EE95E9 /* MVVM-Clean-Flow-Skeleton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Clean-Flow-Skeleton.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E06F1A24BBFAAA00EE95E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F6E06F1B24BBFAAA00EE95E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F6E06F1D24BBFAAA00EE95E9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		F6E06F1E24BBFAAA00EE95E9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		F6E06F2024BBFAAA00EE95E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F6E06F2124BBFAAA00EE95E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F6E06F2424BBFAAA00EE95E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6E06F2724BBFAAA00EE95E9 /* MVVM_Clean_Flow_Skeleton.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVVM_Clean_Flow_Skeleton.xcdatamodel; sourceTree = "<group>"; };
+		F6E06F2924BBFAAC00EE95E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6E06F2C24BBFAAC00EE95E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6E06F2E24BBFAAC00EE95E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6E06F2F24BBFAAC00EE95E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6E06F1424BBFAAA00EE95E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413CFF14B12755668D647F82 /* Pods_MVVM_Clean_Flow_Skeleton.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70241B2ECE20407B9E9BE140 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2549BD7276D30465FCFB34D6 /* Pods-MVVM-Clean-Flow-Skeleton.debug.xcconfig */,
+				0F5E38CE6E7978DD281B5C0D /* Pods-MVVM-Clean-Flow-Skeleton.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE5D8A884C8E77ADCFF5ADEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				077EE782D011D71F2393CC11 /* Pods_MVVM_Clean_Flow_Skeleton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6E06F0E24BBFAAA00EE95E9 = {
+			isa = PBXGroup;
+			children = (
+				F6E06F1924BBFAAA00EE95E9 /* MVVM-Clean-Flow-Skeleton */,
+				F6E06F1824BBFAAA00EE95E9 /* Products */,
+				70241B2ECE20407B9E9BE140 /* Pods */,
+				AE5D8A884C8E77ADCFF5ADEE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F6E06F1824BBFAAA00EE95E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6E06F1724BBFAAA00EE95E9 /* MVVM-Clean-Flow-Skeleton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6E06F1924BBFAAA00EE95E9 /* MVVM-Clean-Flow-Skeleton */ = {
+			isa = PBXGroup;
+			children = (
+				F6E06F1A24BBFAAA00EE95E9 /* AppDelegate.h */,
+				F6E06F1B24BBFAAA00EE95E9 /* AppDelegate.m */,
+				F6E06F1D24BBFAAA00EE95E9 /* SceneDelegate.h */,
+				F6E06F1E24BBFAAA00EE95E9 /* SceneDelegate.m */,
+				F6E06F2024BBFAAA00EE95E9 /* ViewController.h */,
+				F6E06F2124BBFAAA00EE95E9 /* ViewController.m */,
+				F6E06F2324BBFAAA00EE95E9 /* Main.storyboard */,
+				F6E06F2924BBFAAC00EE95E9 /* Assets.xcassets */,
+				F6E06F2B24BBFAAC00EE95E9 /* LaunchScreen.storyboard */,
+				F6E06F2E24BBFAAC00EE95E9 /* Info.plist */,
+				F6E06F2F24BBFAAC00EE95E9 /* main.m */,
+				F6E06F2624BBFAAA00EE95E9 /* MVVM_Clean_Flow_Skeleton.xcdatamodeld */,
+			);
+			path = "MVVM-Clean-Flow-Skeleton";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6E06F1624BBFAAA00EE95E9 /* MVVM-Clean-Flow-Skeleton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6E06F3324BBFAAC00EE95E9 /* Build configuration list for PBXNativeTarget "MVVM-Clean-Flow-Skeleton" */;
+			buildPhases = (
+				9D24425CEADE71AE2B530D13 /* [CP] Check Pods Manifest.lock */,
+				F6E06F1324BBFAAA00EE95E9 /* Sources */,
+				F6E06F1424BBFAAA00EE95E9 /* Frameworks */,
+				F6E06F1524BBFAAA00EE95E9 /* Resources */,
+				EABD94454D0F9D91B15FD9D6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MVVM-Clean-Flow-Skeleton";
+			productName = "MVVM-Clean-Flow-Skeleton";
+			productReference = F6E06F1724BBFAAA00EE95E9 /* MVVM-Clean-Flow-Skeleton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6E06F0F24BBFAAA00EE95E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Genie Truong";
+				TargetAttributes = {
+					F6E06F1624BBFAAA00EE95E9 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = F6E06F1224BBFAAA00EE95E9 /* Build configuration list for PBXProject "MVVM-Clean-Flow-Skeleton" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6E06F0E24BBFAAA00EE95E9;
+			productRefGroup = F6E06F1824BBFAAA00EE95E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6E06F1624BBFAAA00EE95E9 /* MVVM-Clean-Flow-Skeleton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6E06F1524BBFAAA00EE95E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E06F2D24BBFAAC00EE95E9 /* LaunchScreen.storyboard in Resources */,
+				F6E06F2A24BBFAAC00EE95E9 /* Assets.xcassets in Resources */,
+				F6E06F2524BBFAAA00EE95E9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D24425CEADE71AE2B530D13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM-Clean-Flow-Skeleton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EABD94454D0F9D91B15FD9D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM-Clean-Flow-Skeleton/Pods-MVVM-Clean-Flow-Skeleton-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM-Clean-Flow-Skeleton/Pods-MVVM-Clean-Flow-Skeleton-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVM-Clean-Flow-Skeleton/Pods-MVVM-Clean-Flow-Skeleton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6E06F1324BBFAAA00EE95E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E06F3024BBFAAC00EE95E9 /* main.m in Sources */,
+				F6E06F2824BBFAAA00EE95E9 /* MVVM_Clean_Flow_Skeleton.xcdatamodeld in Sources */,
+				F6E06F2224BBFAAA00EE95E9 /* ViewController.m in Sources */,
+				F6E06F1C24BBFAAA00EE95E9 /* AppDelegate.m in Sources */,
+				F6E06F1F24BBFAAA00EE95E9 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F6E06F2324BBFAAA00EE95E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E06F2424BBFAAA00EE95E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F6E06F2B24BBFAAC00EE95E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E06F2C24BBFAAC00EE95E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6E06F3124BBFAAC00EE95E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F6E06F3224BBFAAC00EE95E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6E06F3424BBFAAC00EE95E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2549BD7276D30465FCFB34D6 /* Pods-MVVM-Clean-Flow-Skeleton.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MVVM-Clean-Flow-Skeleton/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "genie.com.vn.MVVM-Clean-Flow-Skeleton";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6E06F3524BBFAAC00EE95E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F5E38CE6E7978DD281B5C0D /* Pods-MVVM-Clean-Flow-Skeleton.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MVVM-Clean-Flow-Skeleton/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "genie.com.vn.MVVM-Clean-Flow-Skeleton";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6E06F1224BBFAAA00EE95E9 /* Build configuration list for PBXProject "MVVM-Clean-Flow-Skeleton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6E06F3124BBFAAC00EE95E9 /* Debug */,
+				F6E06F3224BBFAAC00EE95E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6E06F3324BBFAAC00EE95E9 /* Build configuration list for PBXNativeTarget "MVVM-Clean-Flow-Skeleton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6E06F3424BBFAAC00EE95E9 /* Debug */,
+				F6E06F3524BBFAAC00EE95E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F6E06F2624BBFAAA00EE95E9 /* MVVM_Clean_Flow_Skeleton.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F6E06F2724BBFAAA00EE95E9 /* MVVM_Clean_Flow_Skeleton.xcdatamodel */,
+			);
+			currentVersion = F6E06F2724BBFAAA00EE95E9 /* MVVM_Clean_Flow_Skeleton.xcdatamodel */;
+			path = MVVM_Clean_Flow_Skeleton.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F6E06F0F24BBFAAA00EE95E9 /* Project object */;
+}

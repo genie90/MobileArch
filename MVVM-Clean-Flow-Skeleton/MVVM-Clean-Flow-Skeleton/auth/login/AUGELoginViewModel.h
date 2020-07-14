@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(RACSignal*)passwordValid;
 -(RACSignal*)loginEnable;
 
--(void)saveLoginInfo:(AuthModel*) authModel;
+-(void)saveLoginInfo:(DMGELoginModel*) authModel;
 
 @end
 

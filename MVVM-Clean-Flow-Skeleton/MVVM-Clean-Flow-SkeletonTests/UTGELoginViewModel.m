@@ -46,13 +46,13 @@
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     
-    AuthModel *authModel = [[AuthModel alloc] init];
+    DMGELoginModel *authModel = [[DMGELoginModel alloc] init];
     authModel.email = @"email";
     authModel.phone = @"123123123";
     authModel.token = @"asdfghjkl";
     
     [self.viewmodel saveLoginInfo:authModel];
-    AuthModel *resultAuthModel = [[NSUserDefaults standardUserDefaults] getGBUser];
+    DMGELoginModel *resultAuthModel = [[NSUserDefaults standardUserDefaults] getGBUser];
     assert([resultAuthModel.email isEqual:authModel.email]);
     assert([resultAuthModel.phone isEqual:authModel.phone]);
     assert([resultAuthModel.token isEqual:authModel.token]);

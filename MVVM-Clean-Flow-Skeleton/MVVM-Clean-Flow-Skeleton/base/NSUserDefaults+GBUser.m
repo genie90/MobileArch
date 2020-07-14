@@ -12,14 +12,14 @@
 
 @implementation NSUserDefaults(GBUser)
 
--(AuthModel*)getGBUser{
+-(DMGELoginModel*)getGBUser{
     NSLog(@"private method");
-    AuthModel *model = [[AuthModel alloc] initFromJson:[self valueForKey:@"gb_user"]];
+    DMGELoginModel *model = [[DMGELoginModel alloc] initFromJson:[self valueForKey:@"gb_user"]];
     return model;
 }
 
 
--(void)setGBUser:(AuthModel*) authModel{
+-(void)setGBUser:(DMGELoginModel*) authModel{
     
     NSString *userJson = [authModel getJsonString];
     [self setValue:userJson forKey:@"gb_user"];

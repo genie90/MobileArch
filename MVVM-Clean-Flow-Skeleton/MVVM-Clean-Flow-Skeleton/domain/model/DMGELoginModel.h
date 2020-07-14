@@ -7,15 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AuthApiModel.h"
+#import "APGELoginApiModel.h"
 
-@interface AuthModel : NSObject
+@interface DMGELoginModel : NSObject
 
 @property NSString *phone;
 @property NSString *email;
 @property NSString *token;
 
-- (instancetype)initWithApiModel:(AuthApiModel*)apiModel;
+- (instancetype)initWithApiModel:(APGELoginApiModel*)apiModel;
 - (instancetype)initFromJson:(id)json;
 
 - (id)getJsonString;

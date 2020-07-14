@@ -7,11 +7,11 @@
 //
 #import <ReactiveObjC/RACSignal.h>
 #import <ReactiveObjC/ReactiveObjC.h>
-#import "AuthModel.h"
+#import "DMGELoginModel.h"
 
 @protocol AuthUseCase
 
--(RACSignal<AuthModel*>*) doLoginWithEmail:(NSString*) email and:(NSString*) password;
--(RACSignal<AuthModel*>*) doRegisterWithEmail:(NSString*) email and:(NSString*) password;
+-(RACSignal<DMGELoginModel*>*) doLoginWithEmail:(NSString*) email and:(NSString*) password;
+-(RACSignal<DMGELoginModel*>*) doRegisterWithEmail:(NSString*) email and:(NSString*) password;
 
 @end

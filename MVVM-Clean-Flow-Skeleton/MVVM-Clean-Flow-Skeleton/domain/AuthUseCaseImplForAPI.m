@@ -26,14 +26,16 @@
     return self;
 }
 
-- (RACSignal<AuthModel *> *)doLoginWithEmail:(NSString *)email and:(NSString *)password {
+- (RACSignal<DMGELoginModel *> *)doLoginWithEmail:(NSString *)email and:(NSString *)password {
     NSDictionary *parameters = @{@"email": email, @"password": password};
-    RACSignal<AuthModel*>* loginSignal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+    RACSignal<DMGELoginModel*>* loginSignal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         
-        [[self.authApi doLoginWithParams:parameters] subscribeNext:^(AuthApiModel * _Nullable respond) {
-            AuthApiModel *apiModel = [[AuthApiModel alloc] initWith:respond];
-            [subscriber sendNext:[[AuthModel alloc] initWithApiModel:apiModel]];
-        } error:^(NSError * _Nullable error) {
+        [self.authApi doLoginWithParams:parameters success:^(NSURLSessionDataTask *task, id  _Nullable responseObject) {
+            
+            APGELoginApiModel *apiModel = [[APGELoginApiModel alloc] initWith:responseObject];
+            [subscriber sendNext:[[DMGELoginModel alloc] initWithApiModel:apiModel]];
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError *error) {
             [subscriber sendError:error];
         }];
         
@@ -43,21 +45,10 @@
     return loginSignal;
 }
 
-- (RACSignal<AuthModel *> *)doRegisterWithEmail:(NSString *)email and:(NSString *)password {
+- (RACSignal<DMGELoginModel *> *)doRegisterWithEmail:(NSString *)email and:(NSString *)password {
     NSDictionary *parameters = @{@"email": email, @"password": password};
-    RACSignal<AuthModel*>* registerSignal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-        [[self.authApi doLoginWithParams:parameters] subscribeNext:^(AuthApiModel * _Nullable respond) {
-            
-            // get respond then parse to data we need
-            
-        } error:^(NSError * _Nullable error) {
-            [subscriber sendError:error];
-        }];
-        
-        return nil;
-    }];
     
-    return registerSignal;
+    return nil;
 
 }
 

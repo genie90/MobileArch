@@ -10,9 +10,6 @@
 #import <ReactiveObjC/RACSignal.h>
 #import "AuthAPI.h"
 
-
-NSString *const AUTH_PATH = @"customers/login";
-
 @interface AuthAPI()
 
 @property ApiService* authApiService;
@@ -21,6 +18,8 @@ NSString *const AUTH_PATH = @"customers/login";
 @end
 
 @implementation AuthAPI
+
+NSString *const AUTH_PATH = @"customers/login";
 
 - (id)initWithApiService:(ApiService*) apiService
 {
@@ -31,8 +30,11 @@ NSString *const AUTH_PATH = @"customers/login";
     return self;
 }
 
--(nonnull RACSignal<AuthApiModel*>*) doLoginWithParams:(nullable id)params {
-    return [self.authApiService postItemAtPath:AUTH_PATH parameters:params headers:nil];
+-(void) doLoginWithParams:(nullable id)params
+                  success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+                  failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure
+{
+    [self.authApiService postItemAtPath:AUTH_PATH parameters:params headers:nil success:success failure:failure];
 }
 
 @end

@@ -18,14 +18,16 @@
 		F66B5A8D24BC364300CCA0F2 /* AUGEAuthCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A8C24BC364300CCA0F2 /* AUGEAuthCoordinator.m */; };
 		F66B5A9224BC4DBF00CCA0F2 /* AUGELoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A9124BC4DBF00CCA0F2 /* AUGELoginViewModel.m */; };
 		F66B5A9F24BC510F00CCA0F2 /* AuthUseCaseImplForAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A9724BC510F00CCA0F2 /* AuthUseCaseImplForAPI.m */; };
-		F66B5AA024BC510F00CCA0F2 /* AuthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A9B24BC510F00CCA0F2 /* AuthModel.m */; };
+		F66B5AA024BC510F00CCA0F2 /* DMGELoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A9B24BC510F00CCA0F2 /* DMGELoginModel.m */; };
 		F66B5AAF24BC512000CCA0F2 /* ApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5AA724BC512000CCA0F2 /* ApiService.m */; };
 		F66B5AB024BC512000CCA0F2 /* AuthAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5AA924BC512000CCA0F2 /* AuthAPI.m */; };
-		F66B5AB124BC512000CCA0F2 /* AuthApiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5AAB24BC512000CCA0F2 /* AuthApiModel.m */; };
+		F66B5AB124BC512000CCA0F2 /* APGELoginApiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5AAB24BC512000CCA0F2 /* APGELoginApiModel.m */; };
 		F66B5AB724BC524200CCA0F2 /* NSUserDefaults+GBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5AB324BC524200CCA0F2 /* NSUserDefaults+GBUser.m */; };
 		F66B5AB824BC524200CCA0F2 /* BaseApiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5AB624BC524200CCA0F2 /* BaseApiModel.m */; };
 		F68C000E24BD6F5D003418AC /* UTGELoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F68CFFFD24BD6CCB003418AC /* UTGELoginViewModel.m */; };
 		F68C001124BD71DD003418AC /* UTGEAuthUseCaseImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F68C001024BD71DD003418AC /* UTGEAuthUseCaseImpl.m */; };
+		F68C001524BDB1AD003418AC /* FBGEFirebaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = F68C001424BDB1AD003418AC /* FBGEFirebaseService.m */; };
+		F68C001924BDB221003418AC /* FBGEAuthFirebase.m in Sources */ = {isa = PBXBuildFile; fileRef = F68C001824BDB221003418AC /* FBGEAuthFirebase.m */; };
 		F68CFFFC24BD5741003418AC /* UseCaseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F68CFFFA24BD5741003418AC /* UseCaseProvider.m */; };
 		F6A05F9A24BC552700EB8150 /* NTGENetworkProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A05F9924BC552700EB8150 /* NTGENetworkProvider.m */; };
 		F6E06F1C24BBFAAA00EE95E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E06F1B24BBFAAA00EE95E9 /* AppDelegate.m */; };
@@ -71,14 +73,14 @@
 		F66B5A9124BC4DBF00CCA0F2 /* AUGELoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AUGELoginViewModel.m; sourceTree = "<group>"; };
 		F66B5A9724BC510F00CCA0F2 /* AuthUseCaseImplForAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthUseCaseImplForAPI.m; sourceTree = "<group>"; };
 		F66B5A9824BC510F00CCA0F2 /* AuthUseCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthUseCase.h; sourceTree = "<group>"; };
-		F66B5A9A24BC510F00CCA0F2 /* AuthModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthModel.h; sourceTree = "<group>"; };
-		F66B5A9B24BC510F00CCA0F2 /* AuthModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthModel.m; sourceTree = "<group>"; };
+		F66B5A9A24BC510F00CCA0F2 /* DMGELoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMGELoginModel.h; sourceTree = "<group>"; };
+		F66B5A9B24BC510F00CCA0F2 /* DMGELoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMGELoginModel.m; sourceTree = "<group>"; };
 		F66B5A9D24BC510F00CCA0F2 /* AuthUseCaseImplForAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthUseCaseImplForAPI.h; sourceTree = "<group>"; };
 		F66B5AA624BC512000CCA0F2 /* ApiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiService.h; sourceTree = "<group>"; };
 		F66B5AA724BC512000CCA0F2 /* ApiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiService.m; sourceTree = "<group>"; };
 		F66B5AA924BC512000CCA0F2 /* AuthAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthAPI.m; sourceTree = "<group>"; };
-		F66B5AAA24BC512000CCA0F2 /* AuthApiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthApiModel.h; sourceTree = "<group>"; };
-		F66B5AAB24BC512000CCA0F2 /* AuthApiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthApiModel.m; sourceTree = "<group>"; };
+		F66B5AAA24BC512000CCA0F2 /* APGELoginApiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APGELoginApiModel.h; sourceTree = "<group>"; };
+		F66B5AAB24BC512000CCA0F2 /* APGELoginApiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APGELoginApiModel.m; sourceTree = "<group>"; };
 		F66B5AAC24BC512000CCA0F2 /* AuthAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthAPI.h; sourceTree = "<group>"; };
 		F66B5AB324BC524200CCA0F2 /* NSUserDefaults+GBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+GBUser.m"; sourceTree = "<group>"; };
 		F66B5AB424BC524200CCA0F2 /* BaseApiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseApiModel.h; sourceTree = "<group>"; };
@@ -88,6 +90,10 @@
 		F68C000824BD6F45003418AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F68C000F24BD71DD003418AC /* UTGEAuthUseCaseImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UTGEAuthUseCaseImpl.h; sourceTree = "<group>"; };
 		F68C001024BD71DD003418AC /* UTGEAuthUseCaseImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTGEAuthUseCaseImpl.m; sourceTree = "<group>"; };
+		F68C001324BDB1AD003418AC /* FBGEFirebaseService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBGEFirebaseService.h; sourceTree = "<group>"; };
+		F68C001424BDB1AD003418AC /* FBGEFirebaseService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBGEFirebaseService.m; sourceTree = "<group>"; };
+		F68C001724BDB221003418AC /* FBGEAuthFirebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBGEAuthFirebase.h; sourceTree = "<group>"; };
+		F68C001824BDB221003418AC /* FBGEAuthFirebase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBGEAuthFirebase.m; sourceTree = "<group>"; };
 		F68CFFFA24BD5741003418AC /* UseCaseProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseCaseProvider.m; sourceTree = "<group>"; };
 		F68CFFFB24BD5741003418AC /* UseCaseProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseCaseProvider.h; sourceTree = "<group>"; };
 		F68CFFFD24BD6CCB003418AC /* UTGELoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTGELoginViewModel.m; sourceTree = "<group>"; };
@@ -207,8 +213,8 @@
 		F66B5A9924BC510F00CCA0F2 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				F66B5A9A24BC510F00CCA0F2 /* AuthModel.h */,
-				F66B5A9B24BC510F00CCA0F2 /* AuthModel.m */,
+				F66B5A9A24BC510F00CCA0F2 /* DMGELoginModel.h */,
+				F66B5A9B24BC510F00CCA0F2 /* DMGELoginModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -227,6 +233,9 @@
 		F66B5AA424BC512000CCA0F2 /* firebase */ = {
 			isa = PBXGroup;
 			children = (
+				F68C001624BDB201003418AC /* authentication */,
+				F68C001324BDB1AD003418AC /* FBGEFirebaseService.h */,
+				F68C001424BDB1AD003418AC /* FBGEFirebaseService.m */,
 			);
 			path = firebase;
 			sourceTree = "<group>";
@@ -234,6 +243,7 @@
 		F66B5AA524BC512000CCA0F2 /* api */ = {
 			isa = PBXGroup;
 			children = (
+				F68C001224BDAF80003418AC /* model */,
 				F66B5AA624BC512000CCA0F2 /* ApiService.h */,
 				F66B5AA724BC512000CCA0F2 /* ApiService.m */,
 				F66B5AA824BC512000CCA0F2 /* authentication */,
@@ -244,10 +254,8 @@
 		F66B5AA824BC512000CCA0F2 /* authentication */ = {
 			isa = PBXGroup;
 			children = (
-				F66B5AA924BC512000CCA0F2 /* AuthAPI.m */,
-				F66B5AAA24BC512000CCA0F2 /* AuthApiModel.h */,
-				F66B5AAB24BC512000CCA0F2 /* AuthApiModel.m */,
 				F66B5AAC24BC512000CCA0F2 /* AuthAPI.h */,
+				F66B5AA924BC512000CCA0F2 /* AuthAPI.m */,
 			);
 			path = authentication;
 			sourceTree = "<group>";
@@ -272,6 +280,24 @@
 				F68C001024BD71DD003418AC /* UTGEAuthUseCaseImpl.m */,
 			);
 			path = "MVVM-Clean-Flow-SkeletonTests";
+			sourceTree = "<group>";
+		};
+		F68C001224BDAF80003418AC /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F66B5AAA24BC512000CCA0F2 /* APGELoginApiModel.h */,
+				F66B5AAB24BC512000CCA0F2 /* APGELoginApiModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F68C001624BDB201003418AC /* authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F68C001724BDB221003418AC /* FBGEAuthFirebase.h */,
+				F68C001824BDB221003418AC /* FBGEAuthFirebase.m */,
+			);
+			path = authentication;
 			sourceTree = "<group>";
 		};
 		F6E06F0E24BBFAAA00EE95E9 = {
@@ -522,12 +548,14 @@
 				F68CFFFC24BD5741003418AC /* UseCaseProvider.m in Sources */,
 				F66B5A8224BC319100CCA0F2 /* AUGERegisterViewController.m in Sources */,
 				F6E06F1C24BBFAAA00EE95E9 /* AppDelegate.m in Sources */,
-				F66B5AB124BC512000CCA0F2 /* AuthApiModel.m in Sources */,
+				F68C001924BDB221003418AC /* FBGEAuthFirebase.m in Sources */,
+				F66B5AB124BC512000CCA0F2 /* APGELoginApiModel.m in Sources */,
 				F6A05F9A24BC552700EB8150 /* NTGENetworkProvider.m in Sources */,
-				F66B5AA024BC510F00CCA0F2 /* AuthModel.m in Sources */,
+				F66B5AA024BC510F00CCA0F2 /* DMGELoginModel.m in Sources */,
 				F66B5AAF24BC512000CCA0F2 /* ApiService.m in Sources */,
 				F66B5AB724BC524200CCA0F2 /* NSUserDefaults+GBUser.m in Sources */,
 				F66B5A9224BC4DBF00CCA0F2 /* AUGELoginViewModel.m in Sources */,
+				F68C001524BDB1AD003418AC /* FBGEFirebaseService.m in Sources */,
 				F6E06F1F24BBFAAA00EE95E9 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

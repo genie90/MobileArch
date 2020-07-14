@@ -11,9 +11,11 @@
 
 @interface ApiService : NSObject
 
--(instancetype) initWithEndpoint: (NSString*) endpoint;
+-(nonnull instancetype) initWithEndpoint: (nonnull NSString*) endpoint;
 
--(nonnull RACSignal*) postItemAtPath: (nonnull NSString*) path
-                  parameters:(nullable id)parameters
-                     headers:(nullable NSDictionary <NSString *, NSString *> *)headers;
+- (void) postItemAtPath: (NSString* _Nonnull) path
+             parameters:(nullable id)parameters
+                headers:(nullable NSDictionary <NSString *, NSString *> *)headers
+                success:(nullable void (^)(NSURLSessionDataTask * _Nullable task, id _Nullable responseObject))success
+                failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError * _Nullable error))failure;
 @end

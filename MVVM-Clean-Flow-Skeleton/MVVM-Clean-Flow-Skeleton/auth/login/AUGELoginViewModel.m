@@ -11,11 +11,11 @@
 
 @implementation AUGELoginViewModel
 
--(RACSignal<AuthModel*>*)doLogin{
+-(RACSignal<DMGELoginModel*>*)doLogin{
     return [self.authUseCase doLoginWithEmail:self.email and:self.password];
 }
 
--(void)saveLoginInfo:(AuthModel*) authModel{
+-(void)saveLoginInfo:(DMGELoginModel*) authModel{
     [[NSUserDefaults standardUserDefaults] setGBUser:authModel];
 }
 

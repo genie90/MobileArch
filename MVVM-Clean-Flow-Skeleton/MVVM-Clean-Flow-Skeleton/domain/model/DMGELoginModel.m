@@ -6,11 +6,11 @@
 //  Copyright © 2020 Genie Truong. All rights reserved.
 //
 
-#import "AuthModel.h"
+#import "DMGELoginModel.h"
 
-@implementation AuthModel
+@implementation DMGELoginModel
 
-- (instancetype)initWithApiModel:(AuthApiModel*)apiModel{
+- (instancetype)initWithApiModel:(APGELoginApiModel*)apiModel{
     self = [super init];
     if (self) {
         self.email = apiModel.email;

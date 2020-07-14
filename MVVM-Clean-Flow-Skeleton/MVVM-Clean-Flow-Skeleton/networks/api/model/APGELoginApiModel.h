@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "BaseApiModel.h"
 
-@interface AuthApiModel : BaseApiModel
+@interface APGELoginApiModel : BaseApiModel
 
 @property NSString *phone;
 @property NSString *email;

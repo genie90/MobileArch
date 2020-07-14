@@ -50,7 +50,7 @@
 
 - (IBAction)doLogin:(id)sender {
     @weakify(self);
-    [[self.viewmodel doLogin] subscribeNext:^(AuthModel* _Nullable authModel) {
+    [[self.viewmodel doLogin] subscribeNext:^(DMGELoginModel* _Nullable authModel) {
         @strongify(self);
         [self loginSuccess:authModel];
     } error:^(NSError * _Nullable error) {
@@ -58,7 +58,7 @@
     }];
 }
 
-- (void) loginSuccess:(AuthModel* _Nullable) authModel{
+- (void) loginSuccess:(DMGELoginModel* _Nullable) authModel{
     [self.viewmodel saveLoginInfo:authModel];
     [self.delegate loginDidSuccess];
 }

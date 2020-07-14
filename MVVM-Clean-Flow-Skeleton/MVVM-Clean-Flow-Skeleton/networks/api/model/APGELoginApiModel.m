@@ -6,9 +6,9 @@
 //  Copyright © 2020 Genie Truong. All rights reserved.
 //
 
-#import "AuthApiModel.h"
+#import "APGELoginApiModel.h"
 
-@implementation AuthApiModel
+@implementation APGELoginApiModel
 
 - (instancetype)initWith:(id)respond{
     self = [super init];

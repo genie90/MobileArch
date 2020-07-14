@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AuthModel.h"
+#import "DMGELoginModel.h"
 
 @interface NSUserDefaults (GBUser)
 // private method
-- (AuthModel*)getGBUser;
-- (void)setGBUser:(AuthModel*) authModel;
+- (DMGELoginModel*)getGBUser;
+- (void)setGBUser:(DMGELoginModel*) authModel;
 - (void)removeGBUser;
 
 @end

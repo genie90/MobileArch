@@ -6,13 +6,13 @@
 //  Copyright © 2020 Genie Truong. All rights reserved.
 //
 
-#import "AuthUseCase.h"
 #import "ApiService.h"
-#import "AuthApiModel.h"
 
 @interface AuthAPI : NSObject
 
 -(nullable id)initWithApiService:(nonnull ApiService*) apiService;
--(nonnull RACSignal<AuthApiModel*>*) doLoginWithParams:(nullable id)params;
+-(void) doLoginWithParams:(nullable id)params
+                  success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+                  failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
 
 @end

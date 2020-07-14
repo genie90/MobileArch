@@ -10,14 +10,14 @@
 
 @implementation UTGEAuthUseCaseImpl
 
-- (RACSignal<AuthModel *> *)doLoginWithEmail:(NSString *)email and:(NSString *)password {
+- (RACSignal<DMGELoginModel *> *)doLoginWithEmail:(NSString *)email and:(NSString *)password {
     return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         [subscriber sendNext:@"OK"];
         return nil;
     }];
 }
 
-- (RACSignal<AuthModel *> *)doRegisterWithEmail:(NSString *)email and:(NSString *)password {
+- (RACSignal<DMGELoginModel *> *)doRegisterWithEmail:(NSString *)email and:(NSString *)password {
     return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         
         return nil;

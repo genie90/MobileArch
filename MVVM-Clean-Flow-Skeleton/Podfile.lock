@@ -15,20 +15,24 @@ PODS:
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - ReactiveObjC (3.1.1)
+  - testPods (0.0.1)
 
 DEPENDENCIES:
   - AFNetworking (= 4.0.1)
   - ReactiveObjC (= 3.1.1)
+  - testPods
 
 SPEC REPOS:
   trunk:
     - AFNetworking
     - ReactiveObjC
+    - testPods
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  testPods: b40f5f505a834a0914010a37aef5dc0e66d8c6a6
 
-PODFILE CHECKSUM: 56ee1f73e74e617be4251f6681752b02f1023991
+PODFILE CHECKSUM: 49afc9803ab71015835d30089fc31735512f7ff3
 
 COCOAPODS: 1.9.2

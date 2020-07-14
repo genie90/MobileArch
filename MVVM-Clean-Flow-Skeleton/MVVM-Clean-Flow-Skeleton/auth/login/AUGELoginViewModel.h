@@ -19,6 +19,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) id<AuthUseCase> authUseCase;
 
 -(RACSignal*)doLogin;
+-(RACSignal*)emailValid;
+-(RACSignal*)passwordValid;
+-(RACSignal*)loginEnable;
+
+-(void)saveLoginInfo:(AuthModel*) authModel;
 
 @end
 

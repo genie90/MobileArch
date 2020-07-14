@@ -38,7 +38,7 @@
     return self;
 }
 
-- (NSString*)getJsonString{
+- (id)getJsonString{
     return [NSDictionary dictionaryWithObjectsAndKeys:self.phone,@"phone",self.token,@"token",self.email, @"email", nil];
 }
 

@@ -18,6 +18,6 @@
 - (instancetype)initWithApiModel:(AuthApiModel*)apiModel;
 - (instancetype)initFromJson:(id)json;
 
-- (NSString*)getJsonString;
+- (id)getJsonString;
 
 @end

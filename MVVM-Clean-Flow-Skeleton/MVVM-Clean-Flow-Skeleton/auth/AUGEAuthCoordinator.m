@@ -49,6 +49,7 @@
 }
 
 - (void)loginDidSuccess {
+    NSLog(@"GENIE success");
     return;
 }
 

@@ -31,7 +31,6 @@
     RACSignal<AuthModel*>* loginSignal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         
         [[self.authApi doLoginWithParams:parameters] subscribeNext:^(AuthApiModel * _Nullable respond) {
-            
             AuthApiModel *apiModel = [[AuthApiModel alloc] initWith:respond];
             [subscriber sendNext:[[AuthModel alloc] initWithApiModel:apiModel]];
         } error:^(NSError * _Nullable error) {
@@ -49,8 +48,7 @@
     RACSignal<AuthModel*>* registerSignal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         [[self.authApi doLoginWithParams:parameters] subscribeNext:^(AuthApiModel * _Nullable respond) {
             
-//            AuthApiModel *apiModel = [[AuthApiModel alloc] initWith:respond];
-//            [subscriber sendNext:[[AuthModel alloc] initWithApiModel:apiModel]];
+            // get respond then parse to data we need
             
         } error:^(NSError * _Nullable error) {
             [subscriber sendError:error];

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27484B4403F9D0C7D225F533 /* Pods_MVVM_Clean_Flow_SkeletonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE72493BB045E9129A69D8F /* Pods_MVVM_Clean_Flow_SkeletonTests.framework */; };
 		413CFF14B12755668D647F82 /* Pods_MVVM_Clean_Flow_Skeleton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077EE782D011D71F2393CC11 /* Pods_MVVM_Clean_Flow_Skeleton.framework */; };
 		F66B5A6E24BC077B00CCA0F2 /* AUGELoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66B5A6D24BC077B00CCA0F2 /* AUGELoginViewController.xib */; };
 		F66B5A7124BC08D400CCA0F2 /* AUGELoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A7024BC08D400CCA0F2 /* AUGELoginViewController.m */; };
@@ -23,6 +24,8 @@
 		F66B5AB124BC512000CCA0F2 /* AuthApiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5AAB24BC512000CCA0F2 /* AuthApiModel.m */; };
 		F66B5AB724BC524200CCA0F2 /* NSUserDefaults+GBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5AB324BC524200CCA0F2 /* NSUserDefaults+GBUser.m */; };
 		F66B5AB824BC524200CCA0F2 /* BaseApiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5AB624BC524200CCA0F2 /* BaseApiModel.m */; };
+		F68C000E24BD6F5D003418AC /* UTGELoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F68CFFFD24BD6CCB003418AC /* UTGELoginViewModel.m */; };
+		F68C001124BD71DD003418AC /* UTGEAuthUseCaseImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F68C001024BD71DD003418AC /* UTGEAuthUseCaseImpl.m */; };
 		F68CFFFC24BD5741003418AC /* UseCaseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F68CFFFA24BD5741003418AC /* UseCaseProvider.m */; };
 		F6A05F9A24BC552700EB8150 /* NTGENetworkProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A05F9924BC552700EB8150 /* NTGENetworkProvider.m */; };
 		F6E06F1C24BBFAAA00EE95E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E06F1B24BBFAAA00EE95E9 /* AppDelegate.m */; };
@@ -33,10 +36,23 @@
 		F6E06F3024BBFAAC00EE95E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E06F2F24BBFAAC00EE95E9 /* main.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F68C000924BD6F45003418AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6E06F0F24BBFAAA00EE95E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6E06F1624BBFAAA00EE95E9;
+			remoteInfo = "MVVM-Clean-Flow-Skeleton";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		077EE782D011D71F2393CC11 /* Pods_MVVM_Clean_Flow_Skeleton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Clean_Flow_Skeleton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F5E38CE6E7978DD281B5C0D /* Pods-MVVM-Clean-Flow-Skeleton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-Clean-Flow-Skeleton.release.xcconfig"; path = "Target Support Files/Pods-MVVM-Clean-Flow-Skeleton/Pods-MVVM-Clean-Flow-Skeleton.release.xcconfig"; sourceTree = "<group>"; };
+		12B2DD39D8507D11F51CE543 /* Pods-MVVM-Clean-Flow-SkeletonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-Clean-Flow-SkeletonTests.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-Clean-Flow-SkeletonTests/Pods-MVVM-Clean-Flow-SkeletonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2549BD7276D30465FCFB34D6 /* Pods-MVVM-Clean-Flow-Skeleton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-Clean-Flow-Skeleton.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-Clean-Flow-Skeleton/Pods-MVVM-Clean-Flow-Skeleton.debug.xcconfig"; sourceTree = "<group>"; };
+		A0B6629F6C23A98E016B5315 /* Pods-MVVM-Clean-Flow-SkeletonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-Clean-Flow-SkeletonTests.release.xcconfig"; path = "Target Support Files/Pods-MVVM-Clean-Flow-SkeletonTests/Pods-MVVM-Clean-Flow-SkeletonTests.release.xcconfig"; sourceTree = "<group>"; };
+		ECE72493BB045E9129A69D8F /* Pods_MVVM_Clean_Flow_SkeletonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Clean_Flow_SkeletonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66B5A6D24BC077B00CCA0F2 /* AUGELoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AUGELoginViewController.xib; sourceTree = "<group>"; };
 		F66B5A6F24BC08A100CCA0F2 /* AUGELoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUGELoginViewController.h; sourceTree = "<group>"; };
 		F66B5A7024BC08D400CCA0F2 /* AUGELoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AUGELoginViewController.m; sourceTree = "<group>"; };
@@ -68,8 +84,13 @@
 		F66B5AB424BC524200CCA0F2 /* BaseApiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseApiModel.h; sourceTree = "<group>"; };
 		F66B5AB524BC524200CCA0F2 /* NSUserDefaults+GBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+GBUser.h"; sourceTree = "<group>"; };
 		F66B5AB624BC524200CCA0F2 /* BaseApiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseApiModel.m; sourceTree = "<group>"; };
+		F68C000424BD6F45003418AC /* MVVM-Clean-Flow-SkeletonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-Clean-Flow-SkeletonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F68C000824BD6F45003418AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F68C000F24BD71DD003418AC /* UTGEAuthUseCaseImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UTGEAuthUseCaseImpl.h; sourceTree = "<group>"; };
+		F68C001024BD71DD003418AC /* UTGEAuthUseCaseImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTGEAuthUseCaseImpl.m; sourceTree = "<group>"; };
 		F68CFFFA24BD5741003418AC /* UseCaseProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseCaseProvider.m; sourceTree = "<group>"; };
 		F68CFFFB24BD5741003418AC /* UseCaseProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseCaseProvider.h; sourceTree = "<group>"; };
+		F68CFFFD24BD6CCB003418AC /* UTGELoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTGELoginViewModel.m; sourceTree = "<group>"; };
 		F6A05F9824BC552700EB8150 /* NTGENetworkProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTGENetworkProvider.h; sourceTree = "<group>"; };
 		F6A05F9924BC552700EB8150 /* NTGENetworkProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTGENetworkProvider.m; sourceTree = "<group>"; };
 		F6E06F1724BBFAAA00EE95E9 /* MVVM-Clean-Flow-Skeleton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Clean-Flow-Skeleton.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +106,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F68C000124BD6F45003418AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27484B4403F9D0C7D225F533 /* Pods_MVVM_Clean_Flow_SkeletonTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6E06F1424BBFAAA00EE95E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -101,6 +130,8 @@
 			children = (
 				2549BD7276D30465FCFB34D6 /* Pods-MVVM-Clean-Flow-Skeleton.debug.xcconfig */,
 				0F5E38CE6E7978DD281B5C0D /* Pods-MVVM-Clean-Flow-Skeleton.release.xcconfig */,
+				12B2DD39D8507D11F51CE543 /* Pods-MVVM-Clean-Flow-SkeletonTests.debug.xcconfig */,
+				A0B6629F6C23A98E016B5315 /* Pods-MVVM-Clean-Flow-SkeletonTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -109,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				077EE782D011D71F2393CC11 /* Pods_MVVM_Clean_Flow_Skeleton.framework */,
+				ECE72493BB045E9129A69D8F /* Pods_MVVM_Clean_Flow_SkeletonTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,10 +263,22 @@
 			path = base;
 			sourceTree = "<group>";
 		};
+		F68C000524BD6F45003418AC /* MVVM-Clean-Flow-SkeletonTests */ = {
+			isa = PBXGroup;
+			children = (
+				F68CFFFD24BD6CCB003418AC /* UTGELoginViewModel.m */,
+				F68C000824BD6F45003418AC /* Info.plist */,
+				F68C000F24BD71DD003418AC /* UTGEAuthUseCaseImpl.h */,
+				F68C001024BD71DD003418AC /* UTGEAuthUseCaseImpl.m */,
+			);
+			path = "MVVM-Clean-Flow-SkeletonTests";
+			sourceTree = "<group>";
+		};
 		F6E06F0E24BBFAAA00EE95E9 = {
 			isa = PBXGroup;
 			children = (
 				F6E06F1924BBFAAA00EE95E9 /* MVVM-Clean-Flow-Skeleton */,
+				F68C000524BD6F45003418AC /* MVVM-Clean-Flow-SkeletonTests */,
 				F6E06F1824BBFAAA00EE95E9 /* Products */,
 				70241B2ECE20407B9E9BE140 /* Pods */,
 				AE5D8A884C8E77ADCFF5ADEE /* Frameworks */,
@@ -245,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				F6E06F1724BBFAAA00EE95E9 /* MVVM-Clean-Flow-Skeleton.app */,
+				F68C000424BD6F45003418AC /* MVVM-Clean-Flow-SkeletonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,6 +318,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F68C000324BD6F45003418AC /* MVVM-Clean-Flow-SkeletonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F68C000B24BD6F45003418AC /* Build configuration list for PBXNativeTarget "MVVM-Clean-Flow-SkeletonTests" */;
+			buildPhases = (
+				3C35FC2620ED5942ECF2D4D1 /* [CP] Check Pods Manifest.lock */,
+				F68C000024BD6F45003418AC /* Sources */,
+				F68C000124BD6F45003418AC /* Frameworks */,
+				F68C000224BD6F45003418AC /* Resources */,
+				3FC1D3067116EA640ACBD555 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F68C000A24BD6F45003418AC /* PBXTargetDependency */,
+			);
+			name = "MVVM-Clean-Flow-SkeletonTests";
+			productName = "MVVM-Clean-Flow-SkeletonTests";
+			productReference = F68C000424BD6F45003418AC /* MVVM-Clean-Flow-SkeletonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F6E06F1624BBFAAA00EE95E9 /* MVVM-Clean-Flow-Skeleton */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6E06F3324BBFAAC00EE95E9 /* Build configuration list for PBXNativeTarget "MVVM-Clean-Flow-Skeleton" */;
@@ -301,6 +366,10 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Genie Truong";
 				TargetAttributes = {
+					F68C000324BD6F45003418AC = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = F6E06F1624BBFAAA00EE95E9;
+					};
 					F6E06F1624BBFAAA00EE95E9 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -320,11 +389,19 @@
 			projectRoot = "";
 			targets = (
 				F6E06F1624BBFAAA00EE95E9 /* MVVM-Clean-Flow-Skeleton */,
+				F68C000324BD6F45003418AC /* MVVM-Clean-Flow-SkeletonTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F68C000224BD6F45003418AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6E06F1524BBFAAA00EE95E9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -339,6 +416,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3C35FC2620ED5942ECF2D4D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM-Clean-Flow-SkeletonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FC1D3067116EA640ACBD555 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM-Clean-Flow-SkeletonTests/Pods-MVVM-Clean-Flow-SkeletonTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM-Clean-Flow-SkeletonTests/Pods-MVVM-Clean-Flow-SkeletonTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVM-Clean-Flow-SkeletonTests/Pods-MVVM-Clean-Flow-SkeletonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9D24425CEADE71AE2B530D13 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -381,6 +497,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F68C000024BD6F45003418AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68C001124BD71DD003418AC /* UTGEAuthUseCaseImpl.m in Sources */,
+				F68C000E24BD6F5D003418AC /* UTGELoginViewModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6E06F1324BBFAAA00EE95E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,6 +534,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F68C000A24BD6F45003418AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6E06F1624BBFAAA00EE95E9 /* MVVM-Clean-Flow-Skeleton */;
+			targetProxy = F68C000924BD6F45003418AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		F6E06F2B24BBFAAC00EE95E9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -421,6 +554,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F68C000C24BD6F45003418AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12B2DD39D8507D11F51CE543 /* Pods-MVVM-Clean-Flow-SkeletonTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MVVM-Clean-Flow-SkeletonTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "genie.com.vn.MVVM-Clean-Flow-SkeletonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM-Clean-Flow-Skeleton.app/MVVM-Clean-Flow-Skeleton";
+			};
+			name = Debug;
+		};
+		F68C000D24BD6F45003418AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0B6629F6C23A98E016B5315 /* Pods-MVVM-Clean-Flow-SkeletonTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MVVM-Clean-Flow-SkeletonTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "genie.com.vn.MVVM-Clean-Flow-SkeletonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM-Clean-Flow-Skeleton.app/MVVM-Clean-Flow-Skeleton";
+			};
+			name = Release;
+		};
 		F6E06F3124BBFAAC00EE95E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -568,6 +739,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F68C000B24BD6F45003418AC /* Build configuration list for PBXNativeTarget "MVVM-Clean-Flow-SkeletonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F68C000C24BD6F45003418AC /* Debug */,
+				F68C000D24BD6F45003418AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F6E06F1224BBFAAA00EE95E9 /* Build configuration list for PBXProject "MVVM-Clean-Flow-Skeleton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

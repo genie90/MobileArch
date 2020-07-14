@@ -35,30 +35,13 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    [self emailAndPasswordValidation];
+    [self bindView];
 }
 
-- (void)emailAndPasswordValidation{
-    
+- (void)bindView{
     RAC(self.viewmodel, email) = self.emailTextField.rac_textSignal;
     RAC(self.viewmodel, password) = self.passwordTextField.rac_textSignal;
-
-    
-//    RACSignal *validEmailSignal = [self.emailTextField.rac_textSignal map:^id(NSString *email){
-//        self.viewmodel.email = email;
-//        NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
-//        NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
-//        return [NSNumber numberWithBool:[emailTest evaluateWithObject:email]];
-//    }];
-//
-//    RACSignal *validPasswordSignal = [self.passwordTextField.rac_textSignal map:^id(NSString *password){
-//        self.viewmodel.password = password;
-//        return [NSNumber numberWithBool:(password.length >= 6)];
-//    }];
-//
-//    RAC(self.loginBtn, enabled) = [RACSignal combineLatest:@[validEmailSignal, validPasswordSignal] reduce:^id(NSNumber *emailValid, NSNumber *passwordValid){
-//        return @([emailValid boolValue] && [passwordValid boolValue]);
-//    }];
+    RAC(self.loginBtn, enabled) = [self.viewmodel loginEnable];
 }
 
 - (IBAction)showRegister:(id)sender {
@@ -66,11 +49,18 @@
 }
 
 - (IBAction)doLogin:(id)sender {
-    [[self.viewmodel doLogin] subscribeNext:^(id  _Nullable x) {
-        if (x) {
-            [self.delegate loginDidSuccess];
-        }
+    @weakify(self);
+    [[self.viewmodel doLogin] subscribeNext:^(AuthModel* _Nullable authModel) {
+        @strongify(self);
+        [self loginSuccess:authModel];
+    } error:^(NSError * _Nullable error) {
+        
     }];
+}
+
+- (void) loginSuccess:(AuthModel* _Nullable) authModel{
+    [self.viewmodel saveLoginInfo:authModel];
+    [self.delegate loginDidSuccess];
 }
 
 -(void) setLoginUseCase:(id<AuthUseCase>) authUseCase{

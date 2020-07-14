@@ -9,12 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "AUGEAuthCoordinator.h"
-
+#import "UseCaseProvider.h"
 
 @interface AUGEAuthCoordinator()
 
 @property (strong, nonatomic) UINavigationController *mainNaviController;
 
+@property UseCaseProvider* useCaseProvider;
 
 @end
 
@@ -25,6 +26,7 @@
     self = [super init];
     if (self) {
         self.mainNaviController = naviController;
+        self.useCaseProvider = [[UseCaseProvider alloc] init];
     }
     return self;
 }
@@ -36,6 +38,8 @@
 - (void)showLogin{
     AUGELoginViewController *loginViewController = [[AUGELoginViewController alloc] initWithNibName:@"AUGELoginViewController" bundle:nil];
     loginViewController.delegate = self;
+    [loginViewController setLoginUseCase:[self.useCaseProvider makeAuthUseCaseWithAPI]];
+    
     [self.mainNaviController showViewController:loginViewController sender:self.mainNaviController];
 }
 

@@ -7,10 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveObjC-umbrella.h>
+#import "AuthUseCase.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AUGELoginViewModel : NSObject
+
+@property (strong, nonatomic) NSString *email;
+@property (strong, nonatomic) NSString *password;
+@property (strong, nonatomic) id<AuthUseCase> authUseCase;
+
+-(RACSignal*)doLogin;
 
 @end
 

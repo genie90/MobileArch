@@ -41,6 +41,9 @@
                     <rect key="frame" x="182.5" y="313" width="49" height="36"/>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                     <state key="normal" title="Login"/>
+                    <connections>
+                        <action selector="doLogin:" destination="-1" eventType="touchUpInside" id="p1d-uJ-Q1G"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdb-P2-PUq">
                     <rect key="frame" x="316" y="810" width="82" height="36"/>

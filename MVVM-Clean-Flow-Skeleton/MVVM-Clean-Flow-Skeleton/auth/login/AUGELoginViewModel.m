@@ -10,4 +10,8 @@
 
 @implementation AUGELoginViewModel
 
+-(RACSignal*)doLogin{
+    return [self.authUseCase doLoginWithEmail:self.email and:self.password];
+}
+
 @end

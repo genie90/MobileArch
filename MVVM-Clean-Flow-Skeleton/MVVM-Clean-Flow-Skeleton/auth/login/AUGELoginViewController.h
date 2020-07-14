@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "AUGELoginDelegate.h"
+#import "AuthUseCase.h"
 
 @interface AUGELoginViewController : UIViewController
 
 @property (weak, nonatomic) id<AUGELoginDelegate> delegate;
+
+-(void) setLoginUseCase:(id<AuthUseCase>) authUseCase;
 
 @end

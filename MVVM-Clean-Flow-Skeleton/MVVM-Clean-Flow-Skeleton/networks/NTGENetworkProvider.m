@@ -21,7 +21,7 @@
 {
     self = [super init];
     if (self) {
-        self.endpoint = @"https://uat-golending-api.gobear.com/ph";
+        self.endpoint = @"";
     }
     return self;
 }

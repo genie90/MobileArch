@@ -1,36 +1,21 @@
 //
-//  NetworkUseCase.m
-//  gobearmaterial
+//  AuthUseCaseImpl.m
+//  MVVM-Clean-Flow-Skeleton
 //
-//  Created by Genie Truong on 9/7/20.
+//  Created by Genie Truong on 15/7/20.
 //  Copyright © 2020 Genie Truong. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "AuthUseCaseImplForAPI.h"
+#import "AuthUseCase.h"
+#import "AuthNetworkFactory.h"
 
-@interface AuthUseCaseImplForAPI()
-
-@property AuthAPI* authApi;
-
-@end
-
-@implementation AuthUseCaseImplForAPI
-
-- (instancetype)initWithAPI: (AuthAPI*) authApi
-{
-    self = [super init];
-    if (self) {
-        self.authApi = authApi;
-    }
-    return self;
-}
+@implementation AuthUseCase
 
 - (RACSignal<DMGELoginModel *> *)doLoginWithEmail:(NSString *)email and:(NSString *)password {
     NSDictionary *parameters = @{@"email": email, @"password": password};
     RACSignal<DMGELoginModel*>* loginSignal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         
-        [self.authApi doLoginWithParams:parameters success:^(NSURLSessionDataTask *task, id  _Nullable responseObject) {
+        [[AuthNetworkFactory getAuthNetwork:GENetworkTypeAPI] doLoginWithParams:parameters success:^(NSURLSessionDataTask *task, id  _Nullable responseObject) {
             
             APGELoginApiModel *apiModel = [[APGELoginApiModel alloc] initWith:responseObject];
             [subscriber sendNext:[[DMGELoginModel alloc] initWithApiModel:apiModel]];
@@ -46,10 +31,12 @@
 }
 
 - (RACSignal<DMGELoginModel *> *)doRegisterWithEmail:(NSString *)email and:(NSString *)password {
-    NSDictionary *parameters = @{@"email": email, @"password": password};
-    
     return nil;
+}
 
+
+- (void)saveAuthenticationParams {
+    // Saving something here
 }
 
 

@@ -10,4 +10,16 @@
 
 @implementation FBGEAuthFirebase
 
+- (void)doLoginWithParams:(nullable id)params success:(nullable void (^)(NSURLSessionDataTask *, id _Nullable))success failure:(nullable void (^)(NSURLSessionDataTask * _Nullable, NSError *))failure {
+    
+    //Firebase Login here
+    return;
+}
+
+- (void)doRegisterWithParams:(nullable id)params success:(nullable void (^)(NSURLSessionDataTask *, id _Nullable))success failure:(nullable void (^)(NSURLSessionDataTask * _Nullable, NSError *))failure {
+    
+    // Firebase register here
+    return;
+}
+
 @end

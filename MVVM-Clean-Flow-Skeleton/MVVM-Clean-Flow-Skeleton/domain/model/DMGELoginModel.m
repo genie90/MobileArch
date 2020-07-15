@@ -18,6 +18,7 @@
         self.token = apiModel.token;
     }
     
+    
     return self;
 }
 

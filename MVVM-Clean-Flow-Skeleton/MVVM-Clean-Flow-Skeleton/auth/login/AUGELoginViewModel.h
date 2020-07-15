@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) NSString *email;
 @property (strong, nonatomic) NSString *password;
-@property (strong, nonatomic) id<AuthUseCase> authUseCase;
+@property (strong, nonatomic) AuthUseCase *authUseCase;
 
 -(RACSignal*)doLogin;
 -(RACSignal*)emailValid;

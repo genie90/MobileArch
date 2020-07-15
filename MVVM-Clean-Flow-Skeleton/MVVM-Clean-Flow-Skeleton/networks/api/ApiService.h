@@ -11,8 +11,6 @@
 
 @interface ApiService : NSObject
 
--(nonnull instancetype) initWithEndpoint: (nonnull NSString*) endpoint;
-
 - (void) postItemAtPath: (NSString* _Nonnull) path
              parameters:(nullable id)parameters
                 headers:(nullable NSDictionary <NSString *, NSString *> *)headers

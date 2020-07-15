@@ -13,17 +13,18 @@
 #import <AFNetworking/AFNetworking-umbrella.h>
 
 @interface ApiService()
+
 @property NSString* endpoint;
 
 @end
 
 @implementation ApiService
 
--(instancetype) initWithEndpoint: (NSString*) endpoint
+-(instancetype) init
 {
     self = [super init];
     if (self) {
-        self.endpoint = endpoint;
+        self.endpoint = @"";
     }
     return self;
 }

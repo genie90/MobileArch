@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <ReactiveObjC/RACSignal.h>
 #import "AuthAPI.h"
+#import "ApiService.h"
 
 @interface AuthAPI()
 
@@ -21,11 +22,11 @@
 
 NSString *const AUTH_PATH = @"customers/login";
 
-- (id)initWithApiService:(ApiService*) apiService
+- (instancetype)init
 {
     self = [super init];
     if (self) {
-        self.authApiService = apiService;
+        self.authApiService = [[ApiService alloc] init];
     }
     return self;
 }
@@ -36,5 +37,12 @@ NSString *const AUTH_PATH = @"customers/login";
 {
     [self.authApiService postItemAtPath:AUTH_PATH parameters:params headers:nil success:success failure:failure];
 }
+
+- (void)doRegisterWithParams:(nullable id)params success:(nullable void (^)(NSURLSessionDataTask *, id _Nullable))success failure:(nullable void (^)(NSURLSessionDataTask * _Nullable, NSError *))failure {
+    
+    // Do register with API here
+    return;
+}
+
 
 @end

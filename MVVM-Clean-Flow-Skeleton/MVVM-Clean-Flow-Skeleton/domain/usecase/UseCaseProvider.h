@@ -10,7 +10,7 @@
 
 @interface UseCaseProvider : NSObject
 
--(id<AuthUseCase>) makeAuthUseCaseWithAPI;
--(id<AuthUseCase>) makeAuthUseCaseWithFirebase;
+-(AuthUseCase*) makeAuthUseCaseWithAPI;
+-(AuthUseCase*) makeAuthUseCaseWithFirebase;
 
 @end

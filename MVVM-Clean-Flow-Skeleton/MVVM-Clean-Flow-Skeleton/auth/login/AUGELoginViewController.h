@@ -14,6 +14,6 @@
 
 @property (weak, nonatomic) id<AUGELoginDelegate> delegate;
 
--(void) setLoginUseCase:(id<AuthUseCase>) authUseCase;
+-(void) setLoginUseCase:(AuthUseCase *) authUseCase;
 
 @end

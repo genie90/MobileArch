@@ -63,7 +63,7 @@
     [self.delegate loginDidSuccess];
 }
 
--(void) setLoginUseCase:(id<AuthUseCase>) authUseCase{
+-(void) setLoginUseCase:(AuthUseCase *) authUseCase{
     self.viewmodel.authUseCase = authUseCase;
 }
 @end

@@ -157,6 +157,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F6699EA424BFF5E20064553E /* local */ = {
+			isa = PBXGroup;
+			children = (
+				F67B9A5124BEB57A00FB1508 /* keychain */,
+				F67B9A4D24BEA9CA00FB1508 /* userdefault */,
+				F67B9A4C24BEA9B200FB1508 /* core */,
+				F67B9A4E24BEAA1000FB1508 /* DAGEDataProvider.h */,
+				F67B9A4F24BEAA1000FB1508 /* DAGEDataProvider.m */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		F6699EA624BFF6BE0064553E /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				F66B5A6C24BC074300CCA0F2 /* auth */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
 		F66B5A6C24BC074300CCA0F2 /* auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,14 +190,18 @@
 			path = auth;
 			sourceTree = "<group>";
 		};
-		F66B5A7224BC091000CCA0F2 /* coordinators */ = {
+		F66B5A7224BC091000CCA0F2 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				F6E06F1A24BBFAAA00EE95E9 /* AppDelegate.h */,
+				F6E06F1B24BBFAAA00EE95E9 /* AppDelegate.m */,
+				F6E06F1D24BBFAAA00EE95E9 /* SceneDelegate.h */,
+				F6E06F1E24BBFAAA00EE95E9 /* SceneDelegate.m */,
 				F66B5A7324BC095200CCA0F2 /* GECoordinator.h */,
 				F66B5A7424BC09F700CCA0F2 /* GEAppCoordinator.h */,
 				F66B5A7524BC0A3600CCA0F2 /* GEAppCoordinator.m */,
 			);
-			path = coordinators;
+			path = app;
 			sourceTree = "<group>";
 		};
 		F66B5A8424BC31DE00CCA0F2 /* login */ = {
@@ -221,7 +245,7 @@
 			path = model;
 			sourceTree = "<group>";
 		};
-		F66B5AA224BC512000CCA0F2 /* networks */ = {
+		F66B5AA224BC512000CCA0F2 /* network */ = {
 			isa = PBXGroup;
 			children = (
 				F67B9A5C24BF2BCF00FB1508 /* factory */,
@@ -229,7 +253,7 @@
 				F66B5AA424BC512000CCA0F2 /* firebase */,
 				F66B5AA524BC512000CCA0F2 /* api */,
 			);
-			path = networks;
+			path = network;
 			sourceTree = "<group>";
 		};
 		F66B5AA424BC512000CCA0F2 /* firebase */ = {
@@ -262,21 +286,11 @@
 			path = authentication;
 			sourceTree = "<group>";
 		};
-		F66B5AB224BC524200CCA0F2 /* base */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = base;
-			sourceTree = "<group>";
-		};
 		F67B9A4B24BEA9A500FB1508 /* data */ = {
 			isa = PBXGroup;
 			children = (
-				F67B9A5124BEB57A00FB1508 /* keychain */,
-				F67B9A4D24BEA9CA00FB1508 /* userdefault */,
-				F67B9A4C24BEA9B200FB1508 /* core */,
-				F67B9A4E24BEAA1000FB1508 /* DAGEDataProvider.h */,
-				F67B9A4F24BEAA1000FB1508 /* DAGEDataProvider.m */,
+				F66B5AA224BC512000CCA0F2 /* network */,
+				F6699EA424BFF5E20064553E /* local */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -396,16 +410,10 @@
 		F6E06F1924BBFAAA00EE95E9 /* MVVM-Clean-Flow-Skeleton */ = {
 			isa = PBXGroup;
 			children = (
+				F6699EA624BFF6BE0064553E /* ui */,
 				F67B9A4B24BEA9A500FB1508 /* data */,
-				F66B5AB224BC524200CCA0F2 /* base */,
-				F66B5AA224BC512000CCA0F2 /* networks */,
 				F66B5A9524BC510F00CCA0F2 /* domain */,
-				F66B5A7224BC091000CCA0F2 /* coordinators */,
-				F66B5A6C24BC074300CCA0F2 /* auth */,
-				F6E06F1A24BBFAAA00EE95E9 /* AppDelegate.h */,
-				F6E06F1B24BBFAAA00EE95E9 /* AppDelegate.m */,
-				F6E06F1D24BBFAAA00EE95E9 /* SceneDelegate.h */,
-				F6E06F1E24BBFAAA00EE95E9 /* SceneDelegate.m */,
+				F66B5A7224BC091000CCA0F2 /* app */,
 				F6E06F2924BBFAAC00EE95E9 /* Assets.xcassets */,
 				F6E06F2B24BBFAAC00EE95E9 /* LaunchScreen.storyboard */,
 				F6E06F2E24BBFAAC00EE95E9 /* Info.plist */,

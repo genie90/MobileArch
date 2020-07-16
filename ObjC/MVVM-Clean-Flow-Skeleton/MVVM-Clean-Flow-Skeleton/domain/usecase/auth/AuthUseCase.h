@@ -11,10 +11,15 @@
 
 #import "AuthUseCase.h"
 #import "DMGELoginModel.h"
+#import "AuthNetwork.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AuthUseCase : NSObject
+
+@property id<AuthNetwork> authNetwork;
+
+- (instancetype)initWithAuthNetwork: (id<AuthNetwork>) authNet;
 
 -(RACSignal<DMGELoginModel*>*) doLoginWithEmail:(NSString*) email and:(NSString*) password;
 -(RACSignal<DMGELoginModel*>*) doRegisterWithEmail:(NSString*) email and:(NSString*) password;

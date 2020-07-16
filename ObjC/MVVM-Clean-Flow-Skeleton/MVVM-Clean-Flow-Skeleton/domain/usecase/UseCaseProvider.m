@@ -17,13 +17,9 @@
 
 @implementation UseCaseProvider
 
-- (AuthUseCase*)makeAuthUseCaseWithAPI {
++ (AuthUseCase*)makeAuthUseCase {
     AuthUseCase* authUseCase = [[AuthUseCase alloc] init];
     return authUseCase;
-}
-
-- (AuthUseCase*)makeAuthUseCaseWithFirebase { 
-    return nil;
 }
 
 

@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "AUGEAuthCoordinator.h"
 #import "UseCaseProvider.h"
+#import "AuthNetworkFactory.h"
 
 @interface AUGEAuthCoordinator()
 
@@ -38,7 +39,9 @@
 - (void)showLogin{
     AUGELoginViewController *loginViewController = [[AUGELoginViewController alloc] initWithNibName:@"AUGELoginViewController" bundle:nil];
     loginViewController.delegate = self;
-    [loginViewController setLoginUseCase:[self.useCaseProvider makeAuthUseCaseWithAPI]];
+    AuthUseCase *useCase = [UseCaseProvider makeAuthUseCase];
+    useCase.authNetwork = [AuthNetworkFactory getAuthNetwork:GENetworkTypeAPI];
+    [loginViewController setLoginUseCase:useCase];
     
     [self.mainNaviController showViewController:loginViewController sender:self.mainNaviController];
 }

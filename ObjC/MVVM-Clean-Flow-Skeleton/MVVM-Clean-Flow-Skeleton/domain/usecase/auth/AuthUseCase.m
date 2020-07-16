@@ -7,15 +7,23 @@
 //
 
 #import "AuthUseCase.h"
-#import "AuthNetworkFactory.h"
 
 @implementation AuthUseCase
+
+- (instancetype)initWithAuthNetwork: (id<AuthNetwork>) authNet
+{
+    self = [super init];
+    if (self) {
+        self.authNetwork = authNet;
+    }
+    return self;
+}
 
 - (RACSignal<DMGELoginModel *> *)doLoginWithEmail:(NSString *)email and:(NSString *)password {
     NSDictionary *parameters = @{@"email": email, @"password": password};
     RACSignal<DMGELoginModel*>* loginSignal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         
-        [[AuthNetworkFactory getAuthNetwork:GENetworkTypeAPI] doLoginWithParams:parameters success:^(NSURLSessionDataTask *task, id  _Nullable responseObject) {
+        [self.authNetwork doLoginWithParams:parameters success:^(NSURLSessionDataTask *task, id  _Nullable responseObject) {
             
             APGELoginApiModel *apiModel = [[APGELoginApiModel alloc] initWith:responseObject];
             [subscriber sendNext:[[DMGELoginModel alloc] initWithApiModel:apiModel]];

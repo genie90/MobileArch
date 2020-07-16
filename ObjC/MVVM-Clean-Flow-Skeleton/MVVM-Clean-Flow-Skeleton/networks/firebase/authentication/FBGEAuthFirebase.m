@@ -7,8 +7,20 @@
 //
 
 #import "FBGEAuthFirebase.h"
+#import "FBGEFirebaseService.h"
 
 @implementation FBGEAuthFirebase
+
+FBGEFirebaseService *_service;
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _service = [[FBGEFirebaseService alloc] init];
+    }
+    return self;
+}
 
 - (void)doLoginWithParams:(nullable id)params success:(nullable void (^)(NSURLSessionDataTask *, id _Nullable))success failure:(nullable void (^)(NSURLSessionDataTask * _Nullable, NSError *))failure {
     

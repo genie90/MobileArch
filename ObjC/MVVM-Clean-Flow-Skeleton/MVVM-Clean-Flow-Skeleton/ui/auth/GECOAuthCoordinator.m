@@ -16,6 +16,9 @@
 
 @property (strong, nonatomic) UINavigationController *mainNaviController;
 
+@property (strong, nonatomic) UIViewController *rootViewController;
+
+
 @property GEDMUCUseCaseProvider* useCaseProvider;
 
 @end
@@ -35,6 +38,11 @@
 - (void)start {
     [self showLogin];
 }
+
+- (id)getRootViewController {
+    return self.rootViewController;
+}
+
 
 - (void)showLogin{
     GEUIAULoginViewController *loginViewController = [[GEUIAULoginViewController alloc] initWithNibName:@"GEUIAULoginViewController" bundle:nil];

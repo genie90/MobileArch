@@ -8,11 +8,11 @@
 
 #import "SceneDelegate.h"
 #import "AppDelegate.h"
-#import "GEAppCoordinator.h"
+#import "GECOAppCoordinator.h"
 
 @interface SceneDelegate ()
 
-@property (strong, nonatomic) GEAppCoordinator *appCoordinator;
+@property (strong, nonatomic) GECOAppCoordinator *appCoordinator;
 
 @end
 
@@ -26,7 +26,7 @@
 
     if ([scene isKindOfClass:UIWindowScene.class]) {
         UINavigationController *navController = [[UINavigationController alloc] init];
-        self.appCoordinator = [[GEAppCoordinator alloc] initWithNavigationController:navController];
+        self.appCoordinator = [[GECOAppCoordinator alloc] initWithNavigationController:navController];
         [self.appCoordinator start];
         
         UIWindowScene *uiWindowScene = (UIWindowScene*)scene;

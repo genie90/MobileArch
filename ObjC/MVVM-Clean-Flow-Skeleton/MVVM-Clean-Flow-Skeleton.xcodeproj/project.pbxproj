@@ -9,35 +9,38 @@
 /* Begin PBXBuildFile section */
 		27484B4403F9D0C7D225F533 /* Pods_MVVM_Clean_Flow_SkeletonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE72493BB045E9129A69D8F /* Pods_MVVM_Clean_Flow_SkeletonTests.framework */; };
 		413CFF14B12755668D647F82 /* Pods_MVVM_Clean_Flow_Skeleton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077EE782D011D71F2393CC11 /* Pods_MVVM_Clean_Flow_Skeleton.framework */; };
-		F66B5A6E24BC077B00CCA0F2 /* AUGELoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66B5A6D24BC077B00CCA0F2 /* AUGELoginViewController.xib */; };
-		F66B5A7124BC08D400CCA0F2 /* AUGELoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A7024BC08D400CCA0F2 /* AUGELoginViewController.m */; };
-		F66B5A7624BC0A3600CCA0F2 /* GEAppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A7524BC0A3600CCA0F2 /* GEAppCoordinator.m */; };
-		F66B5A8224BC319100CCA0F2 /* AUGERegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A8024BC319100CCA0F2 /* AUGERegisterViewController.m */; };
-		F66B5A8324BC319100CCA0F2 /* AUGERegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66B5A8124BC319100CCA0F2 /* AUGERegisterViewController.xib */; };
-		F66B5A8824BC327B00CCA0F2 /* GEAppCoordinator+GEAuthDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A8724BC327B00CCA0F2 /* GEAppCoordinator+GEAuthDelegate.m */; };
-		F66B5A8D24BC364300CCA0F2 /* AUGEAuthCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A8C24BC364300CCA0F2 /* AUGEAuthCoordinator.m */; };
-		F66B5A9224BC4DBF00CCA0F2 /* AUGELoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A9124BC4DBF00CCA0F2 /* AUGELoginViewModel.m */; };
-		F66B5AA024BC510F00CCA0F2 /* DMGELoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A9B24BC510F00CCA0F2 /* DMGELoginModel.m */; };
-		F66B5AAF24BC512000CCA0F2 /* ApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5AA724BC512000CCA0F2 /* ApiService.m */; };
-		F66B5AB024BC512000CCA0F2 /* AuthAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5AA924BC512000CCA0F2 /* AuthAPI.m */; };
-		F66B5AB124BC512000CCA0F2 /* APGELoginApiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5AAB24BC512000CCA0F2 /* APGELoginApiModel.m */; };
+		F66B5A6E24BC077B00CCA0F2 /* GEUIAULoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66B5A6D24BC077B00CCA0F2 /* GEUIAULoginViewController.xib */; };
+		F66B5A7124BC08D400CCA0F2 /* GEUIAULoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A7024BC08D400CCA0F2 /* GEUIAULoginViewController.m */; };
+		F66B5A7624BC0A3600CCA0F2 /* GECOAppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A7524BC0A3600CCA0F2 /* GECOAppCoordinator.m */; };
+		F66B5A8224BC319100CCA0F2 /* GEUIAURegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A8024BC319100CCA0F2 /* GEUIAURegisterViewController.m */; };
+		F66B5A8324BC319100CCA0F2 /* GEUIAURegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66B5A8124BC319100CCA0F2 /* GEUIAURegisterViewController.xib */; };
+		F66B5A8824BC327B00CCA0F2 /* GECOAppCoordinator+GEAuthDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A8724BC327B00CCA0F2 /* GECOAppCoordinator+GEAuthDelegate.m */; };
+		F66B5A8D24BC364300CCA0F2 /* GECOAuthCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A8C24BC364300CCA0F2 /* GECOAuthCoordinator.m */; };
+		F66B5A9224BC4DBF00CCA0F2 /* GEUIAULoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A9124BC4DBF00CCA0F2 /* GEUIAULoginViewModel.m */; };
+		F66B5AA024BC510F00CCA0F2 /* GEDMMDLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A9B24BC510F00CCA0F2 /* GEDMMDLoginModel.m */; };
+		F66B5AAF24BC512000CCA0F2 /* GEDANWApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5AA724BC512000CCA0F2 /* GEDANWApiService.m */; };
+		F66B5AB024BC512000CCA0F2 /* GEDANWAuthAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5AA924BC512000CCA0F2 /* GEDANWAuthAPI.m */; };
+		F66B5AB124BC512000CCA0F2 /* GEDANWLoginApiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5AAB24BC512000CCA0F2 /* GEDANWLoginApiModel.m */; };
 		F66B5AB724BC524200CCA0F2 /* NSUserDefaults+GBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5AB324BC524200CCA0F2 /* NSUserDefaults+GBUser.m */; };
-		F66B5AB824BC524200CCA0F2 /* BaseApiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5AB624BC524200CCA0F2 /* BaseApiModel.m */; };
-		F67B9A5024BEAA1000FB1508 /* DAGEDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F67B9A4F24BEAA1000FB1508 /* DAGEDataProvider.m */; };
+		F66B5AB824BC524200CCA0F2 /* GEDANWBaseApiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5AB624BC524200CCA0F2 /* GEDANWBaseApiModel.m */; };
+		F67B9A5024BEAA1000FB1508 /* GEDALCDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F67B9A4F24BEAA1000FB1508 /* GEDALCDataProvider.m */; };
 		F67B9A5424BEB63C00FB1508 /* UICKeyChainStore+KCGEAuthKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = F67B9A5324BEB63C00FB1508 /* UICKeyChainStore+KCGEAuthKeyChain.m */; };
-		F67B9A5924BEB87D00FB1508 /* AuthUseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F67B9A5824BEB87D00FB1508 /* AuthUseCase.m */; };
-		F67B9A5F24BF2BEE00FB1508 /* AuthNetworkFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F67B9A5E24BF2BEE00FB1508 /* AuthNetworkFactory.m */; };
+		F67B9A5924BEB87D00FB1508 /* GEDMUCAuthUseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F67B9A5824BEB87D00FB1508 /* GEDMUCAuthUseCase.m */; };
+		F67B9A5F24BF2BEE00FB1508 /* GEDANWAuthNetworkFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F67B9A5E24BF2BEE00FB1508 /* GEDANWAuthNetworkFactory.m */; };
 		F68C000E24BD6F5D003418AC /* UTGELoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F68CFFFD24BD6CCB003418AC /* UTGELoginViewModel.m */; };
 		F68C001124BD71DD003418AC /* UTGEAuthUseCaseImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F68C001024BD71DD003418AC /* UTGEAuthUseCaseImpl.m */; };
-		F68C001524BDB1AD003418AC /* FBGEFirebaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = F68C001424BDB1AD003418AC /* FBGEFirebaseService.m */; };
-		F68C001924BDB221003418AC /* FBGEAuthFirebase.m in Sources */ = {isa = PBXBuildFile; fileRef = F68C001824BDB221003418AC /* FBGEAuthFirebase.m */; };
-		F68CFFFC24BD5741003418AC /* UseCaseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F68CFFFA24BD5741003418AC /* UseCaseProvider.m */; };
+		F68C001524BDB1AD003418AC /* GEDANWFirebaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = F68C001424BDB1AD003418AC /* GEDANWFirebaseService.m */; };
+		F68C001924BDB221003418AC /* GEDANWAuthFirebase.m in Sources */ = {isa = PBXBuildFile; fileRef = F68C001824BDB221003418AC /* GEDANWAuthFirebase.m */; };
+		F68CFFFC24BD5741003418AC /* GEDMUCUseCaseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F68CFFFA24BD5741003418AC /* GEDMUCUseCaseProvider.m */; };
 		F6E06F1C24BBFAAA00EE95E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E06F1B24BBFAAA00EE95E9 /* AppDelegate.m */; };
 		F6E06F1F24BBFAAA00EE95E9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E06F1E24BBFAAA00EE95E9 /* SceneDelegate.m */; };
 		F6E06F2824BBFAAA00EE95E9 /* MVVM_Clean_Flow_Skeleton.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6E06F2624BBFAAA00EE95E9 /* MVVM_Clean_Flow_Skeleton.xcdatamodeld */; };
 		F6E06F2A24BBFAAC00EE95E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6E06F2924BBFAAC00EE95E9 /* Assets.xcassets */; };
 		F6E06F2D24BBFAAC00EE95E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E06F2B24BBFAAC00EE95E9 /* LaunchScreen.storyboard */; };
 		F6E06F3024BBFAAC00EE95E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E06F2F24BBFAAC00EE95E9 /* main.m */; };
+		F6E6DCFA24C152F5000C5928 /* GEUIAURegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E6DCF924C152F5000C5928 /* GEUIAURegisterViewModel.m */; };
+		F6E6DD0024C187FC000C5928 /* GECOHomeCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E6DCFF24C187FC000C5928 /* GECOHomeCoordinator.m */; };
+		F6E6DD0324C18882000C5928 /* GECOProfileCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E6DD0224C18882000C5928 /* GECOProfileCoordinator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,53 +60,53 @@
 		2549BD7276D30465FCFB34D6 /* Pods-MVVM-Clean-Flow-Skeleton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-Clean-Flow-Skeleton.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-Clean-Flow-Skeleton/Pods-MVVM-Clean-Flow-Skeleton.debug.xcconfig"; sourceTree = "<group>"; };
 		A0B6629F6C23A98E016B5315 /* Pods-MVVM-Clean-Flow-SkeletonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-Clean-Flow-SkeletonTests.release.xcconfig"; path = "Target Support Files/Pods-MVVM-Clean-Flow-SkeletonTests/Pods-MVVM-Clean-Flow-SkeletonTests.release.xcconfig"; sourceTree = "<group>"; };
 		ECE72493BB045E9129A69D8F /* Pods_MVVM_Clean_Flow_SkeletonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Clean_Flow_SkeletonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F66B5A6D24BC077B00CCA0F2 /* AUGELoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AUGELoginViewController.xib; sourceTree = "<group>"; };
-		F66B5A6F24BC08A100CCA0F2 /* AUGELoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUGELoginViewController.h; sourceTree = "<group>"; };
-		F66B5A7024BC08D400CCA0F2 /* AUGELoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AUGELoginViewController.m; sourceTree = "<group>"; };
-		F66B5A7324BC095200CCA0F2 /* GECoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GECoordinator.h; sourceTree = "<group>"; };
-		F66B5A7424BC09F700CCA0F2 /* GEAppCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEAppCoordinator.h; sourceTree = "<group>"; };
-		F66B5A7524BC0A3600CCA0F2 /* GEAppCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEAppCoordinator.m; sourceTree = "<group>"; };
-		F66B5A7F24BC319100CCA0F2 /* AUGERegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUGERegisterViewController.h; sourceTree = "<group>"; };
-		F66B5A8024BC319100CCA0F2 /* AUGERegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AUGERegisterViewController.m; sourceTree = "<group>"; };
-		F66B5A8124BC319100CCA0F2 /* AUGERegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AUGERegisterViewController.xib; sourceTree = "<group>"; };
-		F66B5A8624BC327B00CCA0F2 /* GEAppCoordinator+GEAuthDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GEAppCoordinator+GEAuthDelegate.h"; sourceTree = "<group>"; };
-		F66B5A8724BC327B00CCA0F2 /* GEAppCoordinator+GEAuthDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GEAppCoordinator+GEAuthDelegate.m"; sourceTree = "<group>"; };
-		F66B5A8C24BC364300CCA0F2 /* AUGEAuthCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AUGEAuthCoordinator.m; sourceTree = "<group>"; };
-		F66B5A8E24BC364F00CCA0F2 /* AUGEAuthCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUGEAuthCoordinator.h; sourceTree = "<group>"; };
-		F66B5A8F24BC451300CCA0F2 /* AUGELoginDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUGELoginDelegate.h; sourceTree = "<group>"; };
-		F66B5A9024BC4DBF00CCA0F2 /* AUGELoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUGELoginViewModel.h; sourceTree = "<group>"; };
-		F66B5A9124BC4DBF00CCA0F2 /* AUGELoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AUGELoginViewModel.m; sourceTree = "<group>"; };
-		F66B5A9A24BC510F00CCA0F2 /* DMGELoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMGELoginModel.h; sourceTree = "<group>"; };
-		F66B5A9B24BC510F00CCA0F2 /* DMGELoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMGELoginModel.m; sourceTree = "<group>"; };
-		F66B5AA624BC512000CCA0F2 /* ApiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiService.h; sourceTree = "<group>"; };
-		F66B5AA724BC512000CCA0F2 /* ApiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiService.m; sourceTree = "<group>"; };
-		F66B5AA924BC512000CCA0F2 /* AuthAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthAPI.m; sourceTree = "<group>"; };
-		F66B5AAA24BC512000CCA0F2 /* APGELoginApiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APGELoginApiModel.h; sourceTree = "<group>"; };
-		F66B5AAB24BC512000CCA0F2 /* APGELoginApiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APGELoginApiModel.m; sourceTree = "<group>"; };
-		F66B5AAC24BC512000CCA0F2 /* AuthAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthAPI.h; sourceTree = "<group>"; };
+		F66B5A6D24BC077B00CCA0F2 /* GEUIAULoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GEUIAULoginViewController.xib; sourceTree = "<group>"; };
+		F66B5A6F24BC08A100CCA0F2 /* GEUIAULoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEUIAULoginViewController.h; sourceTree = "<group>"; };
+		F66B5A7024BC08D400CCA0F2 /* GEUIAULoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEUIAULoginViewController.m; sourceTree = "<group>"; };
+		F66B5A7324BC095200CCA0F2 /* GECOCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GECOCoordinator.h; sourceTree = "<group>"; };
+		F66B5A7424BC09F700CCA0F2 /* GECOAppCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GECOAppCoordinator.h; sourceTree = "<group>"; };
+		F66B5A7524BC0A3600CCA0F2 /* GECOAppCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GECOAppCoordinator.m; sourceTree = "<group>"; };
+		F66B5A7F24BC319100CCA0F2 /* GEUIAURegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEUIAURegisterViewController.h; sourceTree = "<group>"; };
+		F66B5A8024BC319100CCA0F2 /* GEUIAURegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEUIAURegisterViewController.m; sourceTree = "<group>"; };
+		F66B5A8124BC319100CCA0F2 /* GEUIAURegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GEUIAURegisterViewController.xib; sourceTree = "<group>"; };
+		F66B5A8624BC327B00CCA0F2 /* GECOAppCoordinator+GEAuthDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GECOAppCoordinator+GEAuthDelegate.h"; sourceTree = "<group>"; };
+		F66B5A8724BC327B00CCA0F2 /* GECOAppCoordinator+GEAuthDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GECOAppCoordinator+GEAuthDelegate.m"; sourceTree = "<group>"; };
+		F66B5A8C24BC364300CCA0F2 /* GECOAuthCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GECOAuthCoordinator.m; sourceTree = "<group>"; };
+		F66B5A8E24BC364F00CCA0F2 /* GECOAuthCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GECOAuthCoordinator.h; sourceTree = "<group>"; };
+		F66B5A8F24BC451300CCA0F2 /* GEUIAULoginDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEUIAULoginDelegate.h; sourceTree = "<group>"; };
+		F66B5A9024BC4DBF00CCA0F2 /* GEUIAULoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEUIAULoginViewModel.h; sourceTree = "<group>"; };
+		F66B5A9124BC4DBF00CCA0F2 /* GEUIAULoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEUIAULoginViewModel.m; sourceTree = "<group>"; };
+		F66B5A9A24BC510F00CCA0F2 /* GEDMMDLoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEDMMDLoginModel.h; sourceTree = "<group>"; };
+		F66B5A9B24BC510F00CCA0F2 /* GEDMMDLoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEDMMDLoginModel.m; sourceTree = "<group>"; };
+		F66B5AA624BC512000CCA0F2 /* GEDANWApiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEDANWApiService.h; sourceTree = "<group>"; };
+		F66B5AA724BC512000CCA0F2 /* GEDANWApiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEDANWApiService.m; sourceTree = "<group>"; };
+		F66B5AA924BC512000CCA0F2 /* GEDANWAuthAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEDANWAuthAPI.m; sourceTree = "<group>"; };
+		F66B5AAA24BC512000CCA0F2 /* GEDANWLoginApiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEDANWLoginApiModel.h; sourceTree = "<group>"; };
+		F66B5AAB24BC512000CCA0F2 /* GEDANWLoginApiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEDANWLoginApiModel.m; sourceTree = "<group>"; };
+		F66B5AAC24BC512000CCA0F2 /* GEDANWAuthAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEDANWAuthAPI.h; sourceTree = "<group>"; };
 		F66B5AB324BC524200CCA0F2 /* NSUserDefaults+GBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+GBUser.m"; sourceTree = "<group>"; };
-		F66B5AB424BC524200CCA0F2 /* BaseApiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseApiModel.h; sourceTree = "<group>"; };
+		F66B5AB424BC524200CCA0F2 /* GEDANWBaseApiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEDANWBaseApiModel.h; sourceTree = "<group>"; };
 		F66B5AB524BC524200CCA0F2 /* NSUserDefaults+GBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+GBUser.h"; sourceTree = "<group>"; };
-		F66B5AB624BC524200CCA0F2 /* BaseApiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseApiModel.m; sourceTree = "<group>"; };
-		F67B9A4E24BEAA1000FB1508 /* DAGEDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAGEDataProvider.h; sourceTree = "<group>"; };
-		F67B9A4F24BEAA1000FB1508 /* DAGEDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAGEDataProvider.m; sourceTree = "<group>"; };
+		F66B5AB624BC524200CCA0F2 /* GEDANWBaseApiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEDANWBaseApiModel.m; sourceTree = "<group>"; };
+		F67B9A4E24BEAA1000FB1508 /* GEDALCDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEDALCDataProvider.h; sourceTree = "<group>"; };
+		F67B9A4F24BEAA1000FB1508 /* GEDALCDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEDALCDataProvider.m; sourceTree = "<group>"; };
 		F67B9A5224BEB63C00FB1508 /* UICKeyChainStore+KCGEAuthKeyChain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICKeyChainStore+KCGEAuthKeyChain.h"; sourceTree = "<group>"; };
 		F67B9A5324BEB63C00FB1508 /* UICKeyChainStore+KCGEAuthKeyChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICKeyChainStore+KCGEAuthKeyChain.m"; sourceTree = "<group>"; };
-		F67B9A5724BEB87D00FB1508 /* AuthUseCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthUseCase.h; sourceTree = "<group>"; };
-		F67B9A5824BEB87D00FB1508 /* AuthUseCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthUseCase.m; sourceTree = "<group>"; };
-		F67B9A5A24BF283C00FB1508 /* AuthNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthNetwork.h; sourceTree = "<group>"; };
-		F67B9A5D24BF2BEE00FB1508 /* AuthNetworkFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthNetworkFactory.h; sourceTree = "<group>"; };
-		F67B9A5E24BF2BEE00FB1508 /* AuthNetworkFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthNetworkFactory.m; sourceTree = "<group>"; };
+		F67B9A5724BEB87D00FB1508 /* GEDMUCAuthUseCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEDMUCAuthUseCase.h; sourceTree = "<group>"; };
+		F67B9A5824BEB87D00FB1508 /* GEDMUCAuthUseCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEDMUCAuthUseCase.m; sourceTree = "<group>"; };
+		F67B9A5A24BF283C00FB1508 /* GEDANWAuthNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEDANWAuthNetwork.h; sourceTree = "<group>"; };
+		F67B9A5D24BF2BEE00FB1508 /* GEDANWAuthNetworkFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEDANWAuthNetworkFactory.h; sourceTree = "<group>"; };
+		F67B9A5E24BF2BEE00FB1508 /* GEDANWAuthNetworkFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEDANWAuthNetworkFactory.m; sourceTree = "<group>"; };
 		F68C000424BD6F45003418AC /* MVVM-Clean-Flow-SkeletonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-Clean-Flow-SkeletonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F68C000824BD6F45003418AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F68C000F24BD71DD003418AC /* UTGEAuthUseCaseImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UTGEAuthUseCaseImpl.h; sourceTree = "<group>"; };
 		F68C001024BD71DD003418AC /* UTGEAuthUseCaseImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTGEAuthUseCaseImpl.m; sourceTree = "<group>"; };
-		F68C001324BDB1AD003418AC /* FBGEFirebaseService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBGEFirebaseService.h; sourceTree = "<group>"; };
-		F68C001424BDB1AD003418AC /* FBGEFirebaseService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBGEFirebaseService.m; sourceTree = "<group>"; };
-		F68C001724BDB221003418AC /* FBGEAuthFirebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBGEAuthFirebase.h; sourceTree = "<group>"; };
-		F68C001824BDB221003418AC /* FBGEAuthFirebase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBGEAuthFirebase.m; sourceTree = "<group>"; };
-		F68CFFFA24BD5741003418AC /* UseCaseProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseCaseProvider.m; sourceTree = "<group>"; };
-		F68CFFFB24BD5741003418AC /* UseCaseProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseCaseProvider.h; sourceTree = "<group>"; };
+		F68C001324BDB1AD003418AC /* GEDANWFirebaseService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEDANWFirebaseService.h; sourceTree = "<group>"; };
+		F68C001424BDB1AD003418AC /* GEDANWFirebaseService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEDANWFirebaseService.m; sourceTree = "<group>"; };
+		F68C001724BDB221003418AC /* GEDANWAuthFirebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEDANWAuthFirebase.h; sourceTree = "<group>"; };
+		F68C001824BDB221003418AC /* GEDANWAuthFirebase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEDANWAuthFirebase.m; sourceTree = "<group>"; };
+		F68CFFFA24BD5741003418AC /* GEDMUCUseCaseProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEDMUCUseCaseProvider.m; sourceTree = "<group>"; };
+		F68CFFFB24BD5741003418AC /* GEDMUCUseCaseProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEDMUCUseCaseProvider.h; sourceTree = "<group>"; };
 		F68CFFFD24BD6CCB003418AC /* UTGELoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTGELoginViewModel.m; sourceTree = "<group>"; };
 		F6E06F1724BBFAAA00EE95E9 /* MVVM-Clean-Flow-Skeleton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Clean-Flow-Skeleton.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E06F1A24BBFAAA00EE95E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +118,12 @@
 		F6E06F2C24BBFAAC00EE95E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6E06F2E24BBFAAC00EE95E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6E06F2F24BBFAAC00EE95E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6E6DCF824C152F5000C5928 /* GEUIAURegisterViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEUIAURegisterViewModel.h; sourceTree = "<group>"; };
+		F6E6DCF924C152F5000C5928 /* GEUIAURegisterViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEUIAURegisterViewModel.m; sourceTree = "<group>"; };
+		F6E6DCFE24C187FC000C5928 /* GECOHomeCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GECOHomeCoordinator.h; sourceTree = "<group>"; };
+		F6E6DCFF24C187FC000C5928 /* GECOHomeCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GECOHomeCoordinator.m; sourceTree = "<group>"; };
+		F6E6DD0124C18882000C5928 /* GECOProfileCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GECOProfileCoordinator.h; sourceTree = "<group>"; };
+		F6E6DD0224C18882000C5928 /* GECOProfileCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GECOProfileCoordinator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,8 +172,8 @@
 				F67B9A5124BEB57A00FB1508 /* keychain */,
 				F67B9A4D24BEA9CA00FB1508 /* userdefault */,
 				F67B9A4C24BEA9B200FB1508 /* core */,
-				F67B9A4E24BEAA1000FB1508 /* DAGEDataProvider.h */,
-				F67B9A4F24BEAA1000FB1508 /* DAGEDataProvider.m */,
+				F67B9A4E24BEAA1000FB1508 /* GEDALCDataProvider.h */,
+				F67B9A4F24BEAA1000FB1508 /* GEDALCDataProvider.m */,
 			);
 			path = local;
 			sourceTree = "<group>";
@@ -172,6 +181,9 @@
 		F6699EA624BFF6BE0064553E /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				F6E6DCFD24C17A56000C5928 /* profile */,
+				F6E6DCFC24C17A2C000C5928 /* home */,
+				F6E6DCFB24C17A23000C5928 /* onboarding */,
 				F66B5A6C24BC074300CCA0F2 /* auth */,
 			);
 			path = ui;
@@ -182,10 +194,10 @@
 			children = (
 				F66B5A8524BC31E700CCA0F2 /* register */,
 				F66B5A8424BC31DE00CCA0F2 /* login */,
-				F66B5A8624BC327B00CCA0F2 /* GEAppCoordinator+GEAuthDelegate.h */,
-				F66B5A8724BC327B00CCA0F2 /* GEAppCoordinator+GEAuthDelegate.m */,
-				F66B5A8E24BC364F00CCA0F2 /* AUGEAuthCoordinator.h */,
-				F66B5A8C24BC364300CCA0F2 /* AUGEAuthCoordinator.m */,
+				F66B5A8624BC327B00CCA0F2 /* GECOAppCoordinator+GEAuthDelegate.h */,
+				F66B5A8724BC327B00CCA0F2 /* GECOAppCoordinator+GEAuthDelegate.m */,
+				F66B5A8E24BC364F00CCA0F2 /* GECOAuthCoordinator.h */,
+				F66B5A8C24BC364300CCA0F2 /* GECOAuthCoordinator.m */,
 			);
 			path = auth;
 			sourceTree = "<group>";
@@ -197,9 +209,9 @@
 				F6E06F1B24BBFAAA00EE95E9 /* AppDelegate.m */,
 				F6E06F1D24BBFAAA00EE95E9 /* SceneDelegate.h */,
 				F6E06F1E24BBFAAA00EE95E9 /* SceneDelegate.m */,
-				F66B5A7324BC095200CCA0F2 /* GECoordinator.h */,
-				F66B5A7424BC09F700CCA0F2 /* GEAppCoordinator.h */,
-				F66B5A7524BC0A3600CCA0F2 /* GEAppCoordinator.m */,
+				F66B5A7324BC095200CCA0F2 /* GECOCoordinator.h */,
+				F66B5A7424BC09F700CCA0F2 /* GECOAppCoordinator.h */,
+				F66B5A7524BC0A3600CCA0F2 /* GECOAppCoordinator.m */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -207,12 +219,12 @@
 		F66B5A8424BC31DE00CCA0F2 /* login */ = {
 			isa = PBXGroup;
 			children = (
-				F66B5A6D24BC077B00CCA0F2 /* AUGELoginViewController.xib */,
-				F66B5A6F24BC08A100CCA0F2 /* AUGELoginViewController.h */,
-				F66B5A7024BC08D400CCA0F2 /* AUGELoginViewController.m */,
-				F66B5A8F24BC451300CCA0F2 /* AUGELoginDelegate.h */,
-				F66B5A9024BC4DBF00CCA0F2 /* AUGELoginViewModel.h */,
-				F66B5A9124BC4DBF00CCA0F2 /* AUGELoginViewModel.m */,
+				F66B5A6D24BC077B00CCA0F2 /* GEUIAULoginViewController.xib */,
+				F66B5A6F24BC08A100CCA0F2 /* GEUIAULoginViewController.h */,
+				F66B5A7024BC08D400CCA0F2 /* GEUIAULoginViewController.m */,
+				F66B5A8F24BC451300CCA0F2 /* GEUIAULoginDelegate.h */,
+				F66B5A9024BC4DBF00CCA0F2 /* GEUIAULoginViewModel.h */,
+				F66B5A9124BC4DBF00CCA0F2 /* GEUIAULoginViewModel.m */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -220,9 +232,11 @@
 		F66B5A8524BC31E700CCA0F2 /* register */ = {
 			isa = PBXGroup;
 			children = (
-				F66B5A7F24BC319100CCA0F2 /* AUGERegisterViewController.h */,
-				F66B5A8024BC319100CCA0F2 /* AUGERegisterViewController.m */,
-				F66B5A8124BC319100CCA0F2 /* AUGERegisterViewController.xib */,
+				F66B5A7F24BC319100CCA0F2 /* GEUIAURegisterViewController.h */,
+				F66B5A8024BC319100CCA0F2 /* GEUIAURegisterViewController.m */,
+				F66B5A8124BC319100CCA0F2 /* GEUIAURegisterViewController.xib */,
+				F6E6DCF824C152F5000C5928 /* GEUIAURegisterViewModel.h */,
+				F6E6DCF924C152F5000C5928 /* GEUIAURegisterViewModel.m */,
 			);
 			path = register;
 			sourceTree = "<group>";
@@ -239,8 +253,8 @@
 		F66B5A9924BC510F00CCA0F2 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				F66B5A9A24BC510F00CCA0F2 /* DMGELoginModel.h */,
-				F66B5A9B24BC510F00CCA0F2 /* DMGELoginModel.m */,
+				F66B5A9A24BC510F00CCA0F2 /* GEDMMDLoginModel.h */,
+				F66B5A9B24BC510F00CCA0F2 /* GEDMMDLoginModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -260,8 +274,8 @@
 			isa = PBXGroup;
 			children = (
 				F68C001624BDB201003418AC /* authentication */,
-				F68C001324BDB1AD003418AC /* FBGEFirebaseService.h */,
-				F68C001424BDB1AD003418AC /* FBGEFirebaseService.m */,
+				F68C001324BDB1AD003418AC /* GEDANWFirebaseService.h */,
+				F68C001424BDB1AD003418AC /* GEDANWFirebaseService.m */,
 			);
 			path = firebase;
 			sourceTree = "<group>";
@@ -270,8 +284,8 @@
 			isa = PBXGroup;
 			children = (
 				F68C001224BDAF80003418AC /* model */,
-				F66B5AA624BC512000CCA0F2 /* ApiService.h */,
-				F66B5AA724BC512000CCA0F2 /* ApiService.m */,
+				F66B5AA624BC512000CCA0F2 /* GEDANWApiService.h */,
+				F66B5AA724BC512000CCA0F2 /* GEDANWApiService.m */,
 				F66B5AA824BC512000CCA0F2 /* authentication */,
 			);
 			path = api;
@@ -280,8 +294,8 @@
 		F66B5AA824BC512000CCA0F2 /* authentication */ = {
 			isa = PBXGroup;
 			children = (
-				F66B5AAC24BC512000CCA0F2 /* AuthAPI.h */,
-				F66B5AA924BC512000CCA0F2 /* AuthAPI.m */,
+				F66B5AAC24BC512000CCA0F2 /* GEDANWAuthAPI.h */,
+				F66B5AA924BC512000CCA0F2 /* GEDANWAuthAPI.m */,
 			);
 			path = authentication;
 			sourceTree = "<group>";
@@ -324,8 +338,8 @@
 			isa = PBXGroup;
 			children = (
 				F67B9A5624BEB85300FB1508 /* auth */,
-				F68CFFFB24BD5741003418AC /* UseCaseProvider.h */,
-				F68CFFFA24BD5741003418AC /* UseCaseProvider.m */,
+				F68CFFFB24BD5741003418AC /* GEDMUCUseCaseProvider.h */,
+				F68CFFFA24BD5741003418AC /* GEDMUCUseCaseProvider.m */,
 			);
 			path = usecase;
 			sourceTree = "<group>";
@@ -333,8 +347,8 @@
 		F67B9A5624BEB85300FB1508 /* auth */ = {
 			isa = PBXGroup;
 			children = (
-				F67B9A5724BEB87D00FB1508 /* AuthUseCase.h */,
-				F67B9A5824BEB87D00FB1508 /* AuthUseCase.m */,
+				F67B9A5724BEB87D00FB1508 /* GEDMUCAuthUseCase.h */,
+				F67B9A5824BEB87D00FB1508 /* GEDMUCAuthUseCase.m */,
 			);
 			path = auth;
 			sourceTree = "<group>";
@@ -342,7 +356,7 @@
 		F67B9A5B24BF28A200FB1508 /* protocol */ = {
 			isa = PBXGroup;
 			children = (
-				F67B9A5A24BF283C00FB1508 /* AuthNetwork.h */,
+				F67B9A5A24BF283C00FB1508 /* GEDANWAuthNetwork.h */,
 			);
 			path = protocol;
 			sourceTree = "<group>";
@@ -350,8 +364,8 @@
 		F67B9A5C24BF2BCF00FB1508 /* factory */ = {
 			isa = PBXGroup;
 			children = (
-				F67B9A5D24BF2BEE00FB1508 /* AuthNetworkFactory.h */,
-				F67B9A5E24BF2BEE00FB1508 /* AuthNetworkFactory.m */,
+				F67B9A5D24BF2BEE00FB1508 /* GEDANWAuthNetworkFactory.h */,
+				F67B9A5E24BF2BEE00FB1508 /* GEDANWAuthNetworkFactory.m */,
 			);
 			path = factory;
 			sourceTree = "<group>";
@@ -370,10 +384,10 @@
 		F68C001224BDAF80003418AC /* model */ = {
 			isa = PBXGroup;
 			children = (
-				F66B5AB424BC524200CCA0F2 /* BaseApiModel.h */,
-				F66B5AB624BC524200CCA0F2 /* BaseApiModel.m */,
-				F66B5AAA24BC512000CCA0F2 /* APGELoginApiModel.h */,
-				F66B5AAB24BC512000CCA0F2 /* APGELoginApiModel.m */,
+				F66B5AB424BC524200CCA0F2 /* GEDANWBaseApiModel.h */,
+				F66B5AB624BC524200CCA0F2 /* GEDANWBaseApiModel.m */,
+				F66B5AAA24BC512000CCA0F2 /* GEDANWLoginApiModel.h */,
+				F66B5AAB24BC512000CCA0F2 /* GEDANWLoginApiModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -381,8 +395,8 @@
 		F68C001624BDB201003418AC /* authentication */ = {
 			isa = PBXGroup;
 			children = (
-				F68C001724BDB221003418AC /* FBGEAuthFirebase.h */,
-				F68C001824BDB221003418AC /* FBGEAuthFirebase.m */,
+				F68C001724BDB221003418AC /* GEDANWAuthFirebase.h */,
+				F68C001824BDB221003418AC /* GEDANWAuthFirebase.m */,
 			);
 			path = authentication;
 			sourceTree = "<group>";
@@ -421,6 +435,31 @@
 				F6E06F2624BBFAAA00EE95E9 /* MVVM_Clean_Flow_Skeleton.xcdatamodeld */,
 			);
 			path = "MVVM-Clean-Flow-Skeleton";
+			sourceTree = "<group>";
+		};
+		F6E6DCFB24C17A23000C5928 /* onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = onboarding;
+			sourceTree = "<group>";
+		};
+		F6E6DCFC24C17A2C000C5928 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				F6E6DCFE24C187FC000C5928 /* GECOHomeCoordinator.h */,
+				F6E6DCFF24C187FC000C5928 /* GECOHomeCoordinator.m */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		F6E6DCFD24C17A56000C5928 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				F6E6DD0124C18882000C5928 /* GECOProfileCoordinator.h */,
+				F6E6DD0224C18882000C5928 /* GECOProfileCoordinator.m */,
+			);
+			path = profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,8 +555,8 @@
 			files = (
 				F6E06F2D24BBFAAC00EE95E9 /* LaunchScreen.storyboard in Resources */,
 				F6E06F2A24BBFAAC00EE95E9 /* Assets.xcassets in Resources */,
-				F66B5A6E24BC077B00CCA0F2 /* AUGELoginViewController.xib in Resources */,
-				F66B5A8324BC319100CCA0F2 /* AUGERegisterViewController.xib in Resources */,
+				F66B5A6E24BC077B00CCA0F2 /* GEUIAULoginViewController.xib in Resources */,
+				F66B5A8324BC319100CCA0F2 /* GEUIAURegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,29 +657,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F66B5AB024BC512000CCA0F2 /* AuthAPI.m in Sources */,
-				F67B9A5924BEB87D00FB1508 /* AuthUseCase.m in Sources */,
+				F6E6DD0324C18882000C5928 /* GECOProfileCoordinator.m in Sources */,
+				F6E6DD0024C187FC000C5928 /* GECOHomeCoordinator.m in Sources */,
+				F66B5AB024BC512000CCA0F2 /* GEDANWAuthAPI.m in Sources */,
+				F67B9A5924BEB87D00FB1508 /* GEDMUCAuthUseCase.m in Sources */,
 				F6E06F3024BBFAAC00EE95E9 /* main.m in Sources */,
-				F66B5AB824BC524200CCA0F2 /* BaseApiModel.m in Sources */,
-				F66B5A7624BC0A3600CCA0F2 /* GEAppCoordinator.m in Sources */,
+				F66B5AB824BC524200CCA0F2 /* GEDANWBaseApiModel.m in Sources */,
+				F66B5A7624BC0A3600CCA0F2 /* GECOAppCoordinator.m in Sources */,
 				F6E06F2824BBFAAA00EE95E9 /* MVVM_Clean_Flow_Skeleton.xcdatamodeld in Sources */,
-				F66B5A7124BC08D400CCA0F2 /* AUGELoginViewController.m in Sources */,
-				F66B5A8824BC327B00CCA0F2 /* GEAppCoordinator+GEAuthDelegate.m in Sources */,
-				F66B5A8D24BC364300CCA0F2 /* AUGEAuthCoordinator.m in Sources */,
-				F68CFFFC24BD5741003418AC /* UseCaseProvider.m in Sources */,
-				F67B9A5F24BF2BEE00FB1508 /* AuthNetworkFactory.m in Sources */,
-				F66B5A8224BC319100CCA0F2 /* AUGERegisterViewController.m in Sources */,
+				F66B5A7124BC08D400CCA0F2 /* GEUIAULoginViewController.m in Sources */,
+				F66B5A8824BC327B00CCA0F2 /* GECOAppCoordinator+GEAuthDelegate.m in Sources */,
+				F66B5A8D24BC364300CCA0F2 /* GECOAuthCoordinator.m in Sources */,
+				F68CFFFC24BD5741003418AC /* GEDMUCUseCaseProvider.m in Sources */,
+				F67B9A5F24BF2BEE00FB1508 /* GEDANWAuthNetworkFactory.m in Sources */,
+				F66B5A8224BC319100CCA0F2 /* GEUIAURegisterViewController.m in Sources */,
 				F6E06F1C24BBFAAA00EE95E9 /* AppDelegate.m in Sources */,
-				F68C001924BDB221003418AC /* FBGEAuthFirebase.m in Sources */,
+				F6E6DCFA24C152F5000C5928 /* GEUIAURegisterViewModel.m in Sources */,
+				F68C001924BDB221003418AC /* GEDANWAuthFirebase.m in Sources */,
 				F67B9A5424BEB63C00FB1508 /* UICKeyChainStore+KCGEAuthKeyChain.m in Sources */,
-				F66B5AB124BC512000CCA0F2 /* APGELoginApiModel.m in Sources */,
-				F66B5AA024BC510F00CCA0F2 /* DMGELoginModel.m in Sources */,
-				F66B5AAF24BC512000CCA0F2 /* ApiService.m in Sources */,
+				F66B5AB124BC512000CCA0F2 /* GEDANWLoginApiModel.m in Sources */,
+				F66B5AA024BC510F00CCA0F2 /* GEDMMDLoginModel.m in Sources */,
+				F66B5AAF24BC512000CCA0F2 /* GEDANWApiService.m in Sources */,
 				F66B5AB724BC524200CCA0F2 /* NSUserDefaults+GBUser.m in Sources */,
-				F66B5A9224BC4DBF00CCA0F2 /* AUGELoginViewModel.m in Sources */,
-				F68C001524BDB1AD003418AC /* FBGEFirebaseService.m in Sources */,
+				F66B5A9224BC4DBF00CCA0F2 /* GEUIAULoginViewModel.m in Sources */,
+				F68C001524BDB1AD003418AC /* GEDANWFirebaseService.m in Sources */,
 				F6E06F1F24BBFAAA00EE95E9 /* SceneDelegate.m in Sources */,
-				F67B9A5024BEAA1000FB1508 /* DAGEDataProvider.m in Sources */,
+				F67B9A5024BEAA1000FB1508 /* GEDALCDataProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

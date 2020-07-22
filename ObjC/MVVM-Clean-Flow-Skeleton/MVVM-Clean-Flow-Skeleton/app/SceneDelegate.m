@@ -27,7 +27,6 @@
     if ([scene isKindOfClass:UIWindowScene.class]) {
         UINavigationController *navController = [[UINavigationController alloc] init];
         self.appCoordinator = [[GECOAppCoordinator alloc] initWithNavigationController:navController];
-        [self.appCoordinator start];
         
         UIWindowScene *uiWindowScene = (UIWindowScene*)scene;
         self.window = [[UIWindow alloc] initWithWindowScene:uiWindowScene];

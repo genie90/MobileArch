@@ -14,53 +14,42 @@
 
 @interface GECOAuthCoordinator()
 
-@property (strong, nonatomic) UINavigationController *mainNaviController;
-
-@property (strong, nonatomic) UIViewController *rootViewController;
-
-
-@property GEDMUCUseCaseProvider* useCaseProvider;
+@property (strong, nonatomic) GEUIAULoginViewController *loginViewController;
 
 @end
 
 @implementation GECOAuthCoordinator
 
-- (instancetype)initWithNavigationController:(UINavigationController*)naviController
+- (instancetype)init
 {
     self = [super init];
     if (self) {
-        self.mainNaviController = naviController;
-        self.useCaseProvider = [[GEDMUCUseCaseProvider alloc] init];
+        [self showLogin];
     }
     return self;
 }
 
-- (void)start {
-    [self showLogin];
-}
-
 - (id)getRootViewController {
-    return self.rootViewController;
+    return self.loginViewController;
 }
 
 
 - (void)showLogin{
-    GEUIAULoginViewController *loginViewController = [[GEUIAULoginViewController alloc] initWithNibName:@"GEUIAULoginViewController" bundle:nil];
-    loginViewController.delegate = self;
+    self.loginViewController = [[GEUIAULoginViewController alloc] initWithNibName:@"GEUIAULoginViewController" bundle:nil];
+    self.loginViewController.delegate = self;
     GEDMUCAuthUseCase *useCase = [GEDMUCUseCaseProvider makeAuthUseCase];
     useCase.authNetwork = [GEDANWAuthNetworkFactory getAuthNetwork:GENetworkTypeAPI];
-    [loginViewController setLoginUseCase:useCase];
-    
-    [self.mainNaviController showViewController:loginViewController sender:self.mainNaviController];
+    [self.loginViewController setLoginUseCase:useCase];
 }
 
 - (void)showRegister{
     GEUIAURegisterViewController *registerViewController = [[GEUIAURegisterViewController alloc] initWithNibName:@"GEUIAURegisterViewController" bundle:nil];
-    [self.mainNaviController showViewController:registerViewController sender:self.mainNaviController];
+    [self.loginViewController showViewController:registerViewController sender:self.loginViewController];
 }
 
 - (void)loginDidSuccess {
     NSLog(@"GENIE success");
+    [self.delegate didAuthen];
     return;
 }
 

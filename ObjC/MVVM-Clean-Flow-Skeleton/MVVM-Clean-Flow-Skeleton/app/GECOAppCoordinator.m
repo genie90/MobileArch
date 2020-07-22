@@ -8,18 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "GECOAppCoordinator.h"
-#import "GECOAuthCoordinator.h"
 
-@interface GECOAppCoordinator()
+@interface GECOAppCoordinator()<GECOAuthCoordinatorDelegate, GECOHomeCoordinatorDelegate>
 
 @property UINavigationController *mainNavigationController;
 
 @end
-
-#import "GEUIAULoginViewController.h"
-#import "GEUIAURegisterViewController.h"
-#import "GEDMUCUseCaseProvider.h"
-#import "GEDANWAuthNetworkFactory.h"
 
 @implementation GECOAppCoordinator
 
@@ -29,6 +23,7 @@
     if (self) {
         self.mainNavigationController = navigationController;
         self.childCoordinators = [[NSMutableDictionary alloc] init];
+        [self start];
     }
     return self;
 }
@@ -39,50 +34,44 @@
     if (isLogin) {
         [self showDashboard];
     } else {
-//        [self showAuthFlow];
-        [self showDashboard];
+        [self showAuthFlow:[[GECOAuthCoordinator alloc] init]];
     }
 }
 
 - (void)showDashboard{
     NSMutableArray *tabItems = [[NSMutableArray alloc] initWithCapacity:2];
 
+    GECOHomeCoordinator *homeCoor = [[GECOHomeCoordinator alloc] init];
+    [tabItems addObject:[homeCoor getRootViewController]];
+    homeCoor.delegate = self;
+    
+    GECOProfileCoordinator *profCoor = [[GECOProfileCoordinator alloc] init];
+    [tabItems addObject:[profCoor getRootViewController]];
 
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     [tabBarController setViewControllers:tabItems];
 
     [self.mainNavigationController showViewController:tabBarController sender:self.mainNavigationController];
     
-    UIViewController *term1 = [[UIViewController alloc] init];
-    [tabItems addObject:term1];
+    [self.childCoordinators setObject:tabBarController forKey:@"Tab"]; // temp
 
-
-
-    GEUIAURegisterViewController *registerViewController = [[GEUIAURegisterViewController alloc] initWithNibName:@"GEUIAURegisterViewController" bundle:nil];
-    [registerViewController setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Profile" image:nil tag:1]];
-    [tabItems addObject:registerViewController];
-    
-    [tabBarController setViewControllers:tabItems];
-    
-    GEUIAULoginViewController *loginViewController = [[GEUIAULoginViewController alloc] initWithNibName:@"GEUIAULoginViewController" bundle:nil];
-    GEDMUCAuthUseCase *useCase = [GEDMUCUseCaseProvider makeAuthUseCase];
-    useCase.authNetwork = [GEDANWAuthNetworkFactory getAuthNetwork:GENetworkTypeAPI];
-    [loginViewController setLoginUseCase:useCase];
-    [loginViewController setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Home" image:nil tag:0]];
-    
-     [tabItems addObject:loginViewController];
-
-    [tabBarController setViewControllers:tabItems];
-    
 
 }
 
-- (void)showAuthFlow{
-    
-    GECOAuthCoordinator *authCoordinator = [[GECOAuthCoordinator alloc] initWithNavigationController:self.mainNavigationController];
-    [authCoordinator start];
-    
+- (void)showAuthFlow:(GECOAuthCoordinator*) authCoordinator{
+    authCoordinator.delegate = self;
+    UIViewController *authRoot = [authCoordinator getRootViewController];
+    [self.mainNavigationController showViewController:authRoot sender:self.mainNavigationController];
     [self.childCoordinators setObject:authCoordinator forKey:NSStringFromClass(GECOAuthCoordinator.class)];
+}
+
+- (void)didAuthen {
+    [self.childCoordinators removeObjectForKey:NSStringFromClass(GECOAuthCoordinator.class)];
+    [self showDashboard];
+}
+
+- (void)openAuthFlow {
+    [self showAuthFlow:[[GECOAuthCoordinator alloc] init]];
 }
 
 @end

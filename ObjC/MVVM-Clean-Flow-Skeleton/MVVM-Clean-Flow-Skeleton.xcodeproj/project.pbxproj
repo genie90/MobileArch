@@ -14,7 +14,6 @@
 		F66B5A7624BC0A3600CCA0F2 /* GECOAppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A7524BC0A3600CCA0F2 /* GECOAppCoordinator.m */; };
 		F66B5A8224BC319100CCA0F2 /* GEUIAURegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A8024BC319100CCA0F2 /* GEUIAURegisterViewController.m */; };
 		F66B5A8324BC319100CCA0F2 /* GEUIAURegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66B5A8124BC319100CCA0F2 /* GEUIAURegisterViewController.xib */; };
-		F66B5A8824BC327B00CCA0F2 /* GECOAppCoordinator+GEAuthDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A8724BC327B00CCA0F2 /* GECOAppCoordinator+GEAuthDelegate.m */; };
 		F66B5A8D24BC364300CCA0F2 /* GECOAuthCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A8C24BC364300CCA0F2 /* GECOAuthCoordinator.m */; };
 		F66B5A9224BC4DBF00CCA0F2 /* GEUIAULoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A9124BC4DBF00CCA0F2 /* GEUIAULoginViewModel.m */; };
 		F66B5AA024BC510F00CCA0F2 /* GEDMMDLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66B5A9B24BC510F00CCA0F2 /* GEDMMDLoginModel.m */; };
@@ -41,6 +40,10 @@
 		F6E6DCFA24C152F5000C5928 /* GEUIAURegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E6DCF924C152F5000C5928 /* GEUIAURegisterViewModel.m */; };
 		F6E6DD0024C187FC000C5928 /* GECOHomeCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E6DCFF24C187FC000C5928 /* GECOHomeCoordinator.m */; };
 		F6E6DD0324C18882000C5928 /* GECOProfileCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E6DD0224C18882000C5928 /* GECOProfileCoordinator.m */; };
+		F6E6DD0724C1935C000C5928 /* GEUIPRProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E6DD0524C1935C000C5928 /* GEUIPRProfileViewController.m */; };
+		F6E6DD0824C1935C000C5928 /* GEUIPRProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E6DD0624C1935C000C5928 /* GEUIPRProfileViewController.xib */; };
+		F6E6DD0C24C19484000C5928 /* GEUIHOHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E6DD0A24C19484000C5928 /* GEUIHOHomeViewController.m */; };
+		F6E6DD0D24C19484000C5928 /* GEUIHOHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E6DD0B24C19484000C5928 /* GEUIHOHomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +72,6 @@
 		F66B5A7F24BC319100CCA0F2 /* GEUIAURegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEUIAURegisterViewController.h; sourceTree = "<group>"; };
 		F66B5A8024BC319100CCA0F2 /* GEUIAURegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEUIAURegisterViewController.m; sourceTree = "<group>"; };
 		F66B5A8124BC319100CCA0F2 /* GEUIAURegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GEUIAURegisterViewController.xib; sourceTree = "<group>"; };
-		F66B5A8624BC327B00CCA0F2 /* GECOAppCoordinator+GEAuthDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GECOAppCoordinator+GEAuthDelegate.h"; sourceTree = "<group>"; };
-		F66B5A8724BC327B00CCA0F2 /* GECOAppCoordinator+GEAuthDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GECOAppCoordinator+GEAuthDelegate.m"; sourceTree = "<group>"; };
 		F66B5A8C24BC364300CCA0F2 /* GECOAuthCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GECOAuthCoordinator.m; sourceTree = "<group>"; };
 		F66B5A8E24BC364F00CCA0F2 /* GECOAuthCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GECOAuthCoordinator.h; sourceTree = "<group>"; };
 		F66B5A8F24BC451300CCA0F2 /* GEUIAULoginDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEUIAULoginDelegate.h; sourceTree = "<group>"; };
@@ -124,6 +125,14 @@
 		F6E6DCFF24C187FC000C5928 /* GECOHomeCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GECOHomeCoordinator.m; sourceTree = "<group>"; };
 		F6E6DD0124C18882000C5928 /* GECOProfileCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GECOProfileCoordinator.h; sourceTree = "<group>"; };
 		F6E6DD0224C18882000C5928 /* GECOProfileCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GECOProfileCoordinator.m; sourceTree = "<group>"; };
+		F6E6DD0424C1935C000C5928 /* GEUIPRProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEUIPRProfileViewController.h; sourceTree = "<group>"; };
+		F6E6DD0524C1935C000C5928 /* GEUIPRProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEUIPRProfileViewController.m; sourceTree = "<group>"; };
+		F6E6DD0624C1935C000C5928 /* GEUIPRProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GEUIPRProfileViewController.xib; sourceTree = "<group>"; };
+		F6E6DD0924C19484000C5928 /* GEUIHOHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GEUIHOHomeViewController.h; sourceTree = "<group>"; };
+		F6E6DD0A24C19484000C5928 /* GEUIHOHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEUIHOHomeViewController.m; sourceTree = "<group>"; };
+		F6E6DD0B24C19484000C5928 /* GEUIHOHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GEUIHOHomeViewController.xib; sourceTree = "<group>"; };
+		F6E6DD0E24C19970000C5928 /* GECOAuthCoordinatorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GECOAuthCoordinatorDelegate.h; sourceTree = "<group>"; };
+		F6E6DD0F24C1A78A000C5928 /* GECOHomeCoordinatorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GECOHomeCoordinatorDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,10 +203,9 @@
 			children = (
 				F66B5A8524BC31E700CCA0F2 /* register */,
 				F66B5A8424BC31DE00CCA0F2 /* login */,
-				F66B5A8624BC327B00CCA0F2 /* GECOAppCoordinator+GEAuthDelegate.h */,
-				F66B5A8724BC327B00CCA0F2 /* GECOAppCoordinator+GEAuthDelegate.m */,
 				F66B5A8E24BC364F00CCA0F2 /* GECOAuthCoordinator.h */,
 				F66B5A8C24BC364300CCA0F2 /* GECOAuthCoordinator.m */,
+				F6E6DD0E24C19970000C5928 /* GECOAuthCoordinatorDelegate.h */,
 			);
 			path = auth;
 			sourceTree = "<group>";
@@ -449,6 +457,10 @@
 			children = (
 				F6E6DCFE24C187FC000C5928 /* GECOHomeCoordinator.h */,
 				F6E6DCFF24C187FC000C5928 /* GECOHomeCoordinator.m */,
+				F6E6DD0924C19484000C5928 /* GEUIHOHomeViewController.h */,
+				F6E6DD0A24C19484000C5928 /* GEUIHOHomeViewController.m */,
+				F6E6DD0B24C19484000C5928 /* GEUIHOHomeViewController.xib */,
+				F6E6DD0F24C1A78A000C5928 /* GECOHomeCoordinatorDelegate.h */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -458,6 +470,9 @@
 			children = (
 				F6E6DD0124C18882000C5928 /* GECOProfileCoordinator.h */,
 				F6E6DD0224C18882000C5928 /* GECOProfileCoordinator.m */,
+				F6E6DD0424C1935C000C5928 /* GEUIPRProfileViewController.h */,
+				F6E6DD0524C1935C000C5928 /* GEUIPRProfileViewController.m */,
+				F6E6DD0624C1935C000C5928 /* GEUIPRProfileViewController.xib */,
 			);
 			path = profile;
 			sourceTree = "<group>";
@@ -555,7 +570,9 @@
 			files = (
 				F6E06F2D24BBFAAC00EE95E9 /* LaunchScreen.storyboard in Resources */,
 				F6E06F2A24BBFAAC00EE95E9 /* Assets.xcassets in Resources */,
+				F6E6DD0824C1935C000C5928 /* GEUIPRProfileViewController.xib in Resources */,
 				F66B5A6E24BC077B00CCA0F2 /* GEUIAULoginViewController.xib in Resources */,
+				F6E6DD0D24C19484000C5928 /* GEUIHOHomeViewController.xib in Resources */,
 				F66B5A8324BC319100CCA0F2 /* GEUIAURegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -666,10 +683,11 @@
 				F66B5A7624BC0A3600CCA0F2 /* GECOAppCoordinator.m in Sources */,
 				F6E06F2824BBFAAA00EE95E9 /* MVVM_Clean_Flow_Skeleton.xcdatamodeld in Sources */,
 				F66B5A7124BC08D400CCA0F2 /* GEUIAULoginViewController.m in Sources */,
-				F66B5A8824BC327B00CCA0F2 /* GECOAppCoordinator+GEAuthDelegate.m in Sources */,
+				F6E6DD0724C1935C000C5928 /* GEUIPRProfileViewController.m in Sources */,
 				F66B5A8D24BC364300CCA0F2 /* GECOAuthCoordinator.m in Sources */,
 				F68CFFFC24BD5741003418AC /* GEDMUCUseCaseProvider.m in Sources */,
 				F67B9A5F24BF2BEE00FB1508 /* GEDANWAuthNetworkFactory.m in Sources */,
+				F6E6DD0C24C19484000C5928 /* GEUIHOHomeViewController.m in Sources */,
 				F66B5A8224BC319100CCA0F2 /* GEUIAURegisterViewController.m in Sources */,
 				F6E06F1C24BBFAAA00EE95E9 /* AppDelegate.m in Sources */,
 				F6E6DCFA24C152F5000C5928 /* GEUIAURegisterViewModel.m in Sources */,

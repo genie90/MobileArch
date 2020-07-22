@@ -6,13 +6,18 @@
 //  Copyright © 2020 Genie Truong. All rights reserved.
 //
 
-#import "GECOCoordinator.h"
 #import <UIKit/UIKit.h>
+#import "GECOAuthCoordinator.h"
+#import "GECOHomeCoordinator.h"
+#import "GECOProfileCoordinator.h"
 
-@interface GECOAppCoordinator : NSObject<GECOCoordinator>
+@interface GECOAppCoordinator : NSObject
 
 @property (strong, nonatomic) NSMutableDictionary *childCoordinators;
 
 - (instancetype)initWithNavigationController: (UINavigationController*) navigationController;
+
+- (void)showAuthFlow;
+- (void)showDashboard;
 
 @end

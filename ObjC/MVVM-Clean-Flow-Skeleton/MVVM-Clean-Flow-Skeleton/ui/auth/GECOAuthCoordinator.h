@@ -9,9 +9,10 @@
 #import "GECOCoordinator.h"
 #import "GEUIAULoginViewController.h"
 #import "GEUIAURegisterViewController.h"
+#import "GECOAuthCoordinatorDelegate.h"
 
 @interface GECOAuthCoordinator : NSObject<GECOCoordinator, GEUIAULoginDelegate>
 
-- (instancetype)initWithNavigationController:(UINavigationController*)naviController;
+@property (weak, nonatomic) id<GECOAuthCoordinatorDelegate> delegate;
 
 @end

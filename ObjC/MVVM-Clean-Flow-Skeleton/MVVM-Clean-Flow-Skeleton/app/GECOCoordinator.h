@@ -9,6 +9,5 @@
 @protocol GECOCoordinator
 
 - (id)getRootViewController;
-- (void)start;
 
 @end

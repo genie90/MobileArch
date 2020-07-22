@@ -6,13 +6,15 @@
 //  Copyright © 2020 Genie Truong. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "GECOCoordinator.h"
+#import "GECOHomeCoordinatorDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GECOHomeCoordinator : NSObject
+@interface GECOHomeCoordinator : NSObject<GECOCoordinator>
 
-@property (strong, nonatomic) UIViewController *rootViewController;
+@property (weak, nonatomic) id<GECOHomeCoordinatorDelegate> delegate;
 
 @end
 

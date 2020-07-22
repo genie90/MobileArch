@@ -6,14 +6,9 @@
 //  Copyright © 2020 Genie Truong. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "GECOCoordinator.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface GECOProfileCoordinator : NSObject
-
-@property (strong, nonatomic) UIViewController *rootViewController;
+@interface GECOProfileCoordinator : NSObject<GECOCoordinator>
 
 @end
-
-NS_ASSUME_NONNULL_END

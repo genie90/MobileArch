@@ -32,7 +32,7 @@ class AuthCoordinator : Fragment(), LoginCallback {
 
 
     override fun loginSuccess() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        parentFragmentManager.popBackStack()
     }
 
     override fun openRegister() {
@@ -40,7 +40,6 @@ class AuthCoordinator : Fragment(), LoginCallback {
     }
 
     override fun openResetPass() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
     private fun showAnAuthScreen(fragment: Fragment) {

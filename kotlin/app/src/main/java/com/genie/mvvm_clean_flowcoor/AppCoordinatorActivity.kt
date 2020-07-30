@@ -3,10 +3,11 @@ package com.genie.mvvm_clean_flowcoor
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
+import com.genie.mvvm_clean_flowcoor.auth.AuthCallback
 import com.genie.mvvm_clean_flowcoor.auth.AuthCoordinator
 
 
-class AppCoordinatorActivity : AppCompatActivity() {
+class AppCoordinatorActivity : AppCompatActivity(), AuthCallback {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,7 +18,7 @@ class AppCoordinatorActivity : AppCompatActivity() {
     private fun launchApp() {
         var login = false
         if (login) {
-            // Show something else
+            showHomeFlow()
         } else {
             showAuthFlow()
         }
@@ -25,9 +26,16 @@ class AppCoordinatorActivity : AppCompatActivity() {
 
     private fun showAuthFlow() {
         supportFragmentManager.beginTransaction()
-            .add(R.id.appContainer, AuthCoordinator.newInstance())
+            .replace(R.id.appContainer, AuthCoordinator.newInstance())
             .commit()
     }
+
+    private fun showHomeFlow() {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.appContainer, AuthCoordinator.newInstance())
+            .commit()
+    }
+
 
     override fun onBackPressed() {
         for (frag in supportFragmentManager.fragments) {
@@ -40,5 +48,9 @@ class AppCoordinatorActivity : AppCompatActivity() {
             }
         }
         super.onBackPressed()
+    }
+
+    override fun loginSucceed() {
+        showHomeFlow()
     }
 }

@@ -1,0 +1,3 @@
+rootProject.name='mvvm-clean-flowcoor'
+include ':app'
+include ':network'

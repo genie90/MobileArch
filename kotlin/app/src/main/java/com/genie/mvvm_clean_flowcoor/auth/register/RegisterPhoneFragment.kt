@@ -27,7 +27,6 @@ class RegisterPhoneFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(RegisterPhoneViewModel::class.java)
-        // TODO: Use the ViewModel
     }
 
 }

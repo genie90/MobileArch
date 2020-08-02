@@ -11,7 +11,7 @@ import retrofit2.http.POST
 import retrofit2.http.Path
 
 /**
- * Created by viet.tr90@gmaili.com on 2/8/20.
+ * Created by viet.tr90@gmail.com on 2/8/20.
  */
 interface ApiService{
 

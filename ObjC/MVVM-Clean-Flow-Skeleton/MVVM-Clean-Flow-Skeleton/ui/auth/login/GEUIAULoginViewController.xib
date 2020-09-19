@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GEUIAULoginViewController">
+            <connections>
+                <outlet property="emailTextField" destination="WTJ-yo-hEe" id="mhB-hU-SUc"/>
+                <outlet property="loginBtn" destination="724-Ii-Xfs" id="wfJ-0n-Epj"/>
+                <outlet property="passwordTextField" destination="cYO-4Q-Imp" id="SAg-LR-Tla"/>
+                <outlet property="registerBtn" destination="mdb-P2-PUq" id="Ocz-h4-Z7E"/>
+                <outlet property="view" destination="iN0-l3-epB" id="42Q-Mr-0n0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTJ-yo-hEe">
+                    <rect key="frame" x="16" y="164" width="382" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="OTN-xD-Kv7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cYO-4Q-Imp">
+                    <rect key="frame" x="16" y="244" width="382" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="ucZ-Kw-apQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="724-Ii-Xfs">
+                    <rect key="frame" x="182.5" y="313" width="49" height="36"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                    <state key="normal" title="Login"/>
+                    <connections>
+                        <action selector="doLogin:" destination="-1" eventType="touchUpInside" id="p1d-uJ-Q1G"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdb-P2-PUq">
+                    <rect key="frame" x="316" y="810" width="82" height="36"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                    <state key="normal" title="Register?"/>
+                    <connections>
+                        <action selector="showRegister:" destination="-1" eventType="touchUpInside" id="dCc-SE-Jk7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="724-Ii-Xfs" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="HIc-cF-xf8"/>
+                <constraint firstItem="724-Ii-Xfs" firstAttribute="top" secondItem="cYO-4Q-Imp" secondAttribute="bottom" constant="21" id="HLR-WR-FIh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WTJ-yo-hEe" secondAttribute="trailing" constant="16" id="Qxl-gM-L70"/>
+                <constraint firstItem="cYO-4Q-Imp" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Vmj-Gp-Jeo"/>
+                <constraint firstItem="WTJ-yo-hEe" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="120" id="ei9-FB-F0s"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mdb-P2-PUq" secondAttribute="bottom" constant="16" id="hI2-Hd-79a"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mdb-P2-PUq" secondAttribute="trailing" constant="16" id="hxT-wm-8dh"/>
+                <constraint firstItem="WTJ-yo-hEe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="kNu-nS-OZt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cYO-4Q-Imp" secondAttribute="trailing" constant="16" id="smL-MJ-XpN"/>
+                <constraint firstItem="cYO-4Q-Imp" firstAttribute="top" secondItem="WTJ-yo-hEe" secondAttribute="bottom" constant="32" id="xhx-SE-sBw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="134"/>
+        </view>
+    </objects>
+</document>

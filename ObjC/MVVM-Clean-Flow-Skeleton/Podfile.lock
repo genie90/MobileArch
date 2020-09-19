@@ -1,0 +1,42 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - ReactiveObjC (3.1.1)
+  - testPods (0.0.1)
+  - UICKeyChainStore (2.2.0)
+
+DEPENDENCIES:
+  - AFNetworking (= 4.0.1)
+  - ReactiveObjC (= 3.1.1)
+  - testPods
+  - UICKeyChainStore (= 2.2.0)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - ReactiveObjC
+    - testPods
+    - UICKeyChainStore
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  testPods: b40f5f505a834a0914010a37aef5dc0e66d8c6a6
+  UICKeyChainStore: 6a218644594e12f855ec2a10f4fc576c1a69daee
+
+PODFILE CHECKSUM: 22730be38595e1df93e6ea4920ebfe515bcd6348
+
+COCOAPODS: 1.9.2

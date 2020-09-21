@@ -12,6 +12,7 @@ import androidx.appcompat.widget.AppCompatEditText
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.NavHostFragment
 import com.genie.mvvm_clean_flowcoor.R
 
 class LoginFragment : Fragment() {
@@ -60,7 +61,9 @@ class LoginFragment : Fragment() {
 
     private fun setupViewAction(v: View) {
         v.findViewById<AppCompatButton>(R.id.registerButton)
-            .setOnClickListener { callback.openRegister() }
+            .setOnClickListener {
+                NavHostFragment.findNavController(this).navigate(R.id.action_loginFragment_to_registerPhoneOtpFragment)
+            }
         v.findViewById<AppCompatButton>(R.id.loginButton).setOnClickListener {
             viewModel.doLogin()
                 .observe(this.viewLifecycleOwner, Observer { s ->
@@ -81,8 +84,7 @@ class LoginFragment : Fragment() {
                     start: Int,
                     count: Int,
                     after: Int
-                ) {
-                }
+                ) {}
 
                 override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
             })

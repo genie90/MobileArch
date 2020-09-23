@@ -1,6 +1,5 @@
 package com.genie.mvvm_clean_flowcoor.auth.login
 
-import android.content.Context
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -16,8 +15,6 @@ import androidx.navigation.fragment.NavHostFragment
 import com.genie.mvvm_clean_flowcoor.R
 
 class LoginFragment : Fragment() {
-
-    private lateinit var callback: LoginCallback
 
     companion object {
         fun newInstance() = LoginFragment()
@@ -42,12 +39,6 @@ class LoginFragment : Fragment() {
         setupObservableObject(viewModel)
     }
 
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        if (parentFragment is LoginCallback) {
-            callback = parentFragment as LoginCallback
-        }
-    }
 
     private fun setupViewBehavior(v: View) {
         v.findViewById<AppCompatEditText>(R.id.loginPhone)
@@ -62,13 +53,14 @@ class LoginFragment : Fragment() {
     private fun setupViewAction(v: View) {
         v.findViewById<AppCompatButton>(R.id.registerButton)
             .setOnClickListener {
-                NavHostFragment.findNavController(this).navigate(R.id.action_loginFragment_to_registerPhoneOtpFragment)
+                NavHostFragment.findNavController(this).navigate(R.id.action_loginFragment_to_registerPhoneFragment)
             }
         v.findViewById<AppCompatButton>(R.id.loginButton).setOnClickListener {
             viewModel.doLogin()
                 .observe(this.viewLifecycleOwner, Observer { s ->
                     run {
-                        if (s) callback.loginSuccess()
+//                        if (s)
+//                            NavHostFragment.findNavController(this).navigate(R.id.action_loginFragment_to_dashboardNavGraph)
                     }
                 })
         }

@@ -3,11 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav_graph"
-    app:startDestination="@id/authCoordinator">
+    app:startDestination="@id/dashboardCoordinator">
 
     <fragment
         android:id="@+id/authCoordinator"
         android:name="com.genie.mvvm_clean_flowcoor.auth.AuthCoordinator"
         android:label="auth_coordinator"
-        tools:layout="@layout/auth_coordinator" />
+        tools:layout="@layout/auth_coordinator" >
+        <action
+            android:id="@+id/action_authCoordinator_to_dashboardCoordinator"
+            app:destination="@id/dashboardCoordinator" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardCoordinator"
+        android:name="com.genie.mvvm_clean_flowcoor.main.DashboardCoordinator"
+        android:label="DashboardCoordinator" >
+        <action
+            android:id="@+id/action_dashboardCoordinator_to_authCoordinator"
+            app:destination="@id/authCoordinator" />
+    </fragment>
 </navigation>

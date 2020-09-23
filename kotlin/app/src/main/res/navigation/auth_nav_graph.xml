@@ -11,23 +11,23 @@
         android:label="login_fragment"
         tools:layout="@layout/login_fragment" >
         <action
-            android:id="@+id/action_loginFragment_to_registerPhoneOtpFragment"
-            app:destination="@id/registerPhoneOtpFragment" />
+            android:id="@+id/action_loginFragment_to_registerPhoneFragment"
+            app:destination="@id/registerPhoneFragment" />
     </fragment>
     <fragment
         android:id="@+id/registerPhoneFragment"
         android:name="com.genie.mvvm_clean_flowcoor.auth.register.RegisterPhoneFragment"
         android:label="register_phone_fragment"
-        tools:layout="@layout/register_phone_fragment" />
+        tools:layout="@layout/register_phone_fragment" >
+        <action
+            android:id="@+id/action_registerPhoneFragment_to_registerPhoneOtpFragment"
+            app:destination="@id/registerPhoneOtpFragment" />
+    </fragment>
     <fragment
         android:id="@+id/registerPhoneOtpFragment"
         android:name="com.genie.mvvm_clean_flowcoor.auth.register.RegisterPhoneOtpFragment"
         android:label="register_phone_otp_fragment"
-        tools:layout="@layout/register_phone_otp_fragment" >
-        <action
-            android:id="@+id/action_registerPhoneOtpFragment_to_registerPhoneFragment"
-            app:destination="@id/registerPhoneFragment" />
-    </fragment>
+        tools:layout="@layout/register_phone_otp_fragment" />
 
 
 </navigation>

@@ -5,6 +5,8 @@ import com.genie.network.model.request.SignUpBody
 import com.genie.network.model.respond.LoginResult
 import com.genie.network.model.respond.SignUpResult
 import retrofit2.Call
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
@@ -14,6 +16,17 @@ import retrofit2.http.Path
  * Created by viet.tr90@gmail.com on 2/8/20.
  */
 interface ApiService{
+
+    companion object {
+        fun create(): ApiService {
+            val retrofit = Retrofit.Builder()
+                .addConverterFactory(GsonConverterFactory.create())
+                .baseUrl("https://en.wikipedia.org/w/")
+                .build()
+
+            return retrofit.create(ApiService::class.java)
+        }
+    }
 
     // User group
     @POST("customers/signup")

@@ -1,11 +1,14 @@
 package com.genie.network.model
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.genie.domain.entity.UserEntity
 import com.genie.domain.entity.WrapperEntity
 import com.genie.domain.interfaces.AuthInterface
 import com.genie.network.ApiService
+import com.genie.network.model.request.LoginBody
 import com.genie.network.model.request.SignUpBody
+import com.genie.network.model.respond.LoginResult
 import com.genie.network.model.respond.SignUpResult
 import retrofit2.Call
 import retrofit2.Callback
@@ -37,7 +40,28 @@ class AuthNetwork(apiService: ApiService): AuthInterface {
         return result
     }
 
-    override fun signInWithPhoneAndPassword(phone: String, password: String): UserEntity {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    override fun signInWithPhoneAndPassword(
+        phone: String?,
+        password: String?
+    ): LiveData<WrapperEntity<UserEntity>> {
+        val result: MutableLiveData<WrapperEntity<UserEntity>> = MutableLiveData()
+
+        authService.login(LoginBody(phone, password)).enqueue(object :Callback<LoginResult>{
+            override fun onFailure(call: Call<LoginResult>, t: Throwable) {
+                result.value = WrapperEntity(null, throwable = t, code = 1001)
+            }
+
+            override fun onResponse(call: Call<LoginResult>, response: Response<LoginResult>) {
+                result.value = WrapperEntity(
+                    UserEntity(
+                        id = 1, phone = "+844567654567", email = "viet.tr90@gmail.com"
+                    ), null, code = 200)
+//                result.value = WrapperEntity( dxo here to convert )
+
+            }
+
+        })
+
+        return result
     }
 }

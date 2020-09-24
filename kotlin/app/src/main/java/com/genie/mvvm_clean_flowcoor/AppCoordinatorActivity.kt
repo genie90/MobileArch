@@ -6,14 +6,12 @@ import androidx.navigation.fragment.NavHostFragment
 import com.genie.mvvm_clean_flowcoor.auth.AuthCallback
 import com.genie.mvvm_clean_flowcoor.main.DashboardCallback
 
-
 class AppCoordinatorActivity : AppCompatActivity(), AuthCallback, DashboardCallback {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_app_coordinator)
         launchApp()
-
     }
 
     private fun launchApp() {
@@ -38,20 +36,6 @@ class AppCoordinatorActivity : AppCompatActivity(), AuthCallback, DashboardCallb
         val navController = navHostFragment.navController
         navController.navigate(R.id.action_onBoardingFragment_to_dashboard_nav_graph)
     }
-
-
-//    override fun onBackPressed() {
-//        for (frag in supportFragmentManager.fragments) {
-//            if (frag.isVisible) {
-//                val childFm: FragmentManager = frag.childFragmentManager
-//                if (childFm.backStackEntryCount > 0) {
-//                    childFm.popBackStack()
-//                    return
-//                }
-//            }
-//        }
-//        super.onBackPressed()
-//    }
 
     override fun loginSucceed() {
         showHomeFlow()

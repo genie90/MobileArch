@@ -1,6 +1,8 @@
 package com.genie.domain.usecase
 
+import androidx.lifecycle.LiveData
 import com.genie.domain.entity.UserEntity
+import com.genie.domain.entity.WrapperEntity
 import com.genie.domain.interfaces.AuthInterface
 
 /**
@@ -9,7 +11,7 @@ import com.genie.domain.interfaces.AuthInterface
 class AuthUseCases(authInterface: AuthInterface) {
     val auth: AuthInterface = authInterface
 
-    fun doLogin(phone: String, pass: String): UserEntity {
+    fun doLogin(phone: String?, pass: String?): LiveData<WrapperEntity<UserEntity>> {
         return auth.signInWithPhoneAndPassword(phone, pass)
     }
 

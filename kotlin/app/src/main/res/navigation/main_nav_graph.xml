@@ -3,23 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav_graph"
-    app:startDestination="@id/dashboardCoordinator">
+    app:startDestination="@id/onBoardingFragment">
+
+    <include app:graph="@navigation/auth_nav_graph" />
+
+    <include app:graph="@navigation/dashboard_nav_graph" />
+
+    <action
+        android:id="@+id/action_authCoordinator_to_dashboardCoordinator"
+        app:destination="@id/dashboard_nav_graph" />
+
+    <action
+        android:id="@+id/action_dashboardCoordinator_to_authCoordinator"
+        app:destination="@id/auth_nav_graph" />
 
     <fragment
-        android:id="@+id/authCoordinator"
-        android:name="com.genie.mvvm_clean_flowcoor.auth.AuthCoordinator"
-        android:label="auth_coordinator"
-        tools:layout="@layout/auth_coordinator" >
+        android:id="@+id/onBoardingFragment"
+        android:name="com.genie.mvvm_clean_flowcoor.OnBoardingFragment"
+        android:label="OnBoardingFragment"
+        tools:layout="@layout/on_boarding_fragment">
         <action
-            android:id="@+id/action_authCoordinator_to_dashboardCoordinator"
-            app:destination="@id/dashboardCoordinator" />
+            android:id="@+id/action_onBoardingFragment_to_dashboard_nav_graph"
+            app:destination="@id/dashboard_nav_graph"
+            app:popUpTo="@id/onBoardingFragment"
+            app:popUpToInclusive="true" />
     </fragment>
-    <fragment
-        android:id="@+id/dashboardCoordinator"
-        android:name="com.genie.mvvm_clean_flowcoor.main.DashboardCoordinator"
-        android:label="DashboardCoordinator" >
-        <action
-            android:id="@+id/action_dashboardCoordinator_to_authCoordinator"
-            app:destination="@id/authCoordinator" />
-    </fragment>
+
 </navigation>

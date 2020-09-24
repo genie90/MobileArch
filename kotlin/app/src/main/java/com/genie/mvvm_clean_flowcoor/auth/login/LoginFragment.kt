@@ -59,8 +59,8 @@ class LoginFragment : Fragment() {
             viewModel.doLogin()
                 .observe(this.viewLifecycleOwner, Observer { s ->
                     run {
-//                        if (s)
-//                            NavHostFragment.findNavController(this).navigate(R.id.action_loginFragment_to_dashboardNavGraph)
+                        if (s)
+                            NavHostFragment.findNavController(requireParentFragment()).popBackStack()
                     }
                 })
         }

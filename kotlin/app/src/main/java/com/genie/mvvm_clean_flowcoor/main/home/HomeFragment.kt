@@ -1,5 +1,6 @@
 package com.genie.mvvm_clean_flowcoor.main.home
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,9 +9,13 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
+import com.genie.mvvm_clean_flowcoor.AppCoordinatorActivity
 import com.genie.mvvm_clean_flowcoor.R
+import com.genie.mvvm_clean_flowcoor.main.DashboardCallback
 
 class HomeFragment : Fragment() {
+
+    lateinit var callback: DashboardCallback
 
     companion object {
         fun newInstance() = HomeFragment()
@@ -30,13 +35,20 @@ class HomeFragment : Fragment() {
         return v
     }
 
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        if (context is AppCoordinatorActivity) {
+            callback = context
+        }
+    }
+
     private fun setupViewBehavior(v: View) {
 
     }
 
     private fun setupViewAction(v: View) {
         v.findViewById<Button>(R.id.homeLogin).setOnClickListener {
-            NavHostFragment.findNavController(this).navigate(R.id.action_homeFragment_to_authNavGraph)
+            callback.requestAuth()
         }
     }
 

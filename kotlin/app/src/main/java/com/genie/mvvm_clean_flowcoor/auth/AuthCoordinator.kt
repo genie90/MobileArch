@@ -30,10 +30,6 @@ class AuthCoordinator : Fragment() {
         val navController = navHostFragment.navController
     }
 
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-    }
-
     private fun showAnAuthScreen(fragment: Fragment) {
         childFragmentManager.beginTransaction()
             .replace(R.id.authContainer, fragment)

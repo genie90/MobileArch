@@ -2,10 +2,8 @@ package com.genie.mvvm_clean_flowcoor
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentManager
 import androidx.navigation.fragment.NavHostFragment
 import com.genie.mvvm_clean_flowcoor.auth.AuthCallback
-import com.genie.mvvm_clean_flowcoor.auth.AuthCoordinator
 import com.genie.mvvm_clean_flowcoor.main.DashboardCallback
 
 
@@ -28,13 +26,15 @@ class AppCoordinatorActivity : AppCompatActivity(), AuthCallback, DashboardCallb
     }
 
     private fun showAuthFlow() {
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.main_fragment) as NavHostFragment
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.main_fragment) as NavHostFragment
         val navController = navHostFragment.navController
         navController.navigate(R.id.action_dashboardCoordinator_to_authCoordinator)
     }
 
     private fun showHomeFlow() {
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.main_fragment) as NavHostFragment
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.main_fragment) as NavHostFragment
         val navController = navHostFragment.navController
         navController.navigate(R.id.action_onBoardingFragment_to_dashboard_nav_graph)
     }

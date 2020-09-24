@@ -1,4 +1,5 @@
 package com.genie.mvvm_clean_flowcoor
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +8,6 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
-import com.genie.mvvm_clean_flowcoor.R
 
 class OnBoardingFragment : Fragment() {
 
@@ -35,7 +35,8 @@ class OnBoardingFragment : Fragment() {
 
     private fun setupViewAction(v: View) {
         v.findViewById<Button>(R.id.homeLogin).setOnClickListener {
-            NavHostFragment.findNavController(this).navigate(R.id.action_onBoardingFragment_to_dashboard_nav_graph)
+            NavHostFragment.findNavController(this)
+                .navigate(R.id.action_onBoardingFragment_to_dashboard_nav_graph)
         }
     }
 

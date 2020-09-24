@@ -24,7 +24,8 @@ class DashboardCoordinator : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        val navHostFragment = childFragmentManager.findFragmentById(R.id.dashboard_fragment) as NavHostFragment
+        val navHostFragment =
+            childFragmentManager.findFragmentById(R.id.dashboard_fragment) as NavHostFragment
         val navController = navHostFragment.navController
     }
 

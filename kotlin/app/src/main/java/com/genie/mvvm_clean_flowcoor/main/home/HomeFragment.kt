@@ -8,8 +8,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.NavHostFragment
-import com.genie.mvvm_clean_flowcoor.AppCoordinatorActivity
 import com.genie.mvvm_clean_flowcoor.R
 import com.genie.mvvm_clean_flowcoor.main.DashboardCallback
 
@@ -37,7 +35,7 @@ class HomeFragment : Fragment() {
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        if (context is AppCoordinatorActivity) {
+        if (context is DashboardCallback) {
             callback = context
         }
     }

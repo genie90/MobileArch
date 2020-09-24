@@ -1,6 +1,9 @@
 package com.genie.mvvm_clean_flowcoor.auth.login
 
-import androidx.lifecycle.*
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.Transformations
+import androidx.lifecycle.ViewModel
 import com.genie.mvvm_clean_flowcoor.utils.Utils.combineLatest
 
 class LoginViewModel : ViewModel() {
@@ -9,9 +12,10 @@ class LoginViewModel : ViewModel() {
     var password: MutableLiveData<String> = MutableLiveData()
     var phoneValid: LiveData<Boolean> = Transformations.map(phone) { p -> p.length > 9 }
     var passwordValid: LiveData<Boolean> = Transformations.map(password) { p -> p.length > 6 }
-    var loginEnable: LiveData<Boolean> = Transformations.map(phoneValid.combineLatest(passwordValid)) { (a,b) -> a && b}
+    var loginEnable: LiveData<Boolean> =
+        Transformations.map(phoneValid.combineLatest(passwordValid)) { (a, b) -> a && b }
 
-    fun doLogin(): LiveData<Boolean>{
+    fun doLogin(): LiveData<Boolean> {
         return MutableLiveData<Boolean>().apply { value = true }
     }
 

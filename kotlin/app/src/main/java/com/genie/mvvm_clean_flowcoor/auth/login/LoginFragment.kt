@@ -53,7 +53,8 @@ class LoginFragment : Fragment() {
     private fun setupViewAction(v: View) {
         v.findViewById<AppCompatButton>(R.id.registerButton)
             .setOnClickListener {
-                NavHostFragment.findNavController(this).navigate(R.id.action_loginFragment_to_registerPhoneFragment)
+                NavHostFragment.findNavController(this)
+                    .navigate(R.id.action_loginFragment_to_registerPhoneFragment)
             }
         v.findViewById<AppCompatButton>(R.id.loginButton).setOnClickListener {
             viewModel.doLogin()
@@ -76,7 +77,8 @@ class LoginFragment : Fragment() {
                     start: Int,
                     count: Int,
                     after: Int
-                ) {}
+                ) {
+                }
 
                 override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
             })

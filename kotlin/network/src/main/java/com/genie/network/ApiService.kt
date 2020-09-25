@@ -1,9 +1,11 @@
 package com.genie.network
 
+import com.genie.domain.entity.WrapperEntity
 import com.genie.network.model.request.LoginBody
 import com.genie.network.model.request.SignUpBody
 import com.genie.network.model.respond.LoginResult
 import com.genie.network.model.respond.SignUpResult
+import com.genie.network.model.respond.WrapperRespond
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -18,10 +20,10 @@ import retrofit2.http.Path
 interface ApiService{
 
     companion object {
-        fun create(): ApiService {
+        fun create(baseUrl: String): ApiService {
             val retrofit = Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl("https://en.wikipedia.org/w/")
+                .baseUrl(baseUrl)
                 .build()
 
             return retrofit.create(ApiService::class.java)
@@ -33,7 +35,7 @@ interface ApiService{
     fun signUp(@Body body: SignUpBody): Call<SignUpResult>
 
     @POST("customers/login")
-    fun login(@Body body: LoginBody): Call<LoginResult>
+    fun login(@Body body: LoginBody): Call<WrapperRespond<LoginResult>>
 
     // Movie group
     @GET("movies?api_key={api_key}")

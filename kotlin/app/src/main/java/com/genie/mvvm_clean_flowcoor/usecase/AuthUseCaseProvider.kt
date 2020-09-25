@@ -1,6 +1,7 @@
 package com.genie.mvvm_clean_flowcoor.usecase
 
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import com.genie.domain.entity.UserEntity
 import com.genie.domain.entity.WrapperEntity
 import com.genie.domain.interfaces.AuthInterface
@@ -13,9 +14,14 @@ import com.genie.network.model.AuthNetwork
  */
 object AuthUseCaseProvider {
 
-    private val authImpl: AuthInterface = AuthNetwork(ApiService.create())
+    private val authImpl: AuthInterface = AuthNetwork(ApiService.create("abc"))
 
     fun login(phone: String?, password: String?): LiveData<WrapperEntity<UserEntity>> {
-        return AuthUseCases(authImpl).doLogin(phone, password)
+
+        var respond: MutableLiveData<WrapperEntity<UserEntity>> = MutableLiveData()
+        AuthUseCases(authImpl).doLogin(phone, password).subscribe { result: WrapperEntity<UserEntity>?, t: Throwable? ->
+            respond.value = result
+        }
+        return respond
     }
 }

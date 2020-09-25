@@ -47,26 +47,5 @@ class AuthNetwork(apiService: ApiService): AuthInterface {
 
             })
         }
-
-//
-//        authService.login(LoginBody(phone, password)).enqueue(object :Callback<WrapperRespond<LoginResult>>{
-//            override fun onFailure(call: Call<WrapperRespond<LoginResult>>, t: Throwable) {
-//                result.value = WrapperEntity(null, throwable = t, code = 1001)
-//            }
-//
-//            override fun onResponse(call: Call<WrapperRespond<LoginResult>>, response: Response<WrapperRespond<LoginResult>>) {
-//                val loginResult: LoginResult? = response.body()?.data
-//                if (loginResult != null) {
-//                    result.value = WrapperEntity(
-//                        UserEntity(
-//                            userId = loginResult.userId, phone = loginResult.phone, email = loginResult.email
-//                        ), null, code = 200)
-//                }
-//
-//            }
-//
-//        })
-//
-//        return result
     }
 }

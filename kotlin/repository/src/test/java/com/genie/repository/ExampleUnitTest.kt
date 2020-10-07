@@ -1,4 +1,4 @@
-package com.genie.data
+package com.genie.repository
 
 import org.junit.Test
 

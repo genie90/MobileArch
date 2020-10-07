@@ -1,13 +1,14 @@
 package com.genie.network
 
-import com.genie.domain.entity.WrapperEntity
 import com.genie.network.model.request.LoginBody
 import com.genie.network.model.request.SignUpBody
 import com.genie.network.model.respond.LoginResult
 import com.genie.network.model.respond.SignUpResult
 import com.genie.network.model.respond.WrapperRespond
+import io.reactivex.rxjava3.core.Single
 import retrofit2.Call
 import retrofit2.Retrofit
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -23,6 +24,7 @@ interface ApiService{
         fun create(baseUrl: String): ApiService {
             val retrofit = Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .baseUrl(baseUrl)
                 .build()
 
@@ -35,7 +37,7 @@ interface ApiService{
     fun signUp(@Body body: SignUpBody): Call<SignUpResult>
 
     @POST("customers/login")
-    fun login(@Body body: LoginBody): Call<WrapperRespond<LoginResult>>
+    fun login(@Body body: LoginBody): Single<WrapperRespond<LoginResult>>
 
     // Movie group
     @GET("movies?api_key={api_key}")

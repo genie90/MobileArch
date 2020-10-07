@@ -1,7 +1,6 @@
 package com.genie.domain.usecase
 
 import com.genie.domain.entity.UserEntity
-import com.genie.domain.entity.WrapperEntity
 import com.genie.domain.interfaces.AuthInterface
 import io.reactivex.rxjava3.core.Single
 
@@ -11,7 +10,7 @@ import io.reactivex.rxjava3.core.Single
 class AuthUseCases(authInterface: AuthInterface) {
     val auth: AuthInterface = authInterface
 
-    fun doLogin(phone: String?, pass: String?): Single<WrapperEntity<UserEntity>> {
+    fun doLogin(phone: String?, pass: String?): Single<UserEntity> {
         return auth.signInWithPhoneAndPassword(phone, pass)
     }
 

@@ -60,7 +60,7 @@ class LoginFragment : Fragment() {
             viewModel.doLogin()
                 .observe(this.viewLifecycleOwner, Observer { s ->
                     run {
-                        if (s.code == 200)
+                        if (s != null)
                             NavHostFragment.findNavController(requireParentFragment()).popBackStack()
                     }
                 })

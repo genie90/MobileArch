@@ -5,7 +5,6 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
 import com.genie.domain.entity.UserEntity
-import com.genie.domain.entity.WrapperEntity
 import com.genie.mvvm_clean_flowcoor.usecase.AuthUseCaseProvider
 import com.genie.mvvm_clean_flowcoor.utils.Utils.combineLatest
 
@@ -18,7 +17,7 @@ class LoginViewModel : ViewModel() {
     var loginEnable: LiveData<Boolean> =
         Transformations.map(phoneValid.combineLatest(passwordValid)) { (a, b) -> a && b }
 
-    fun doLogin(): LiveData<WrapperEntity<UserEntity>> {
+    fun doLogin(): LiveData<UserEntity> {
         return AuthUseCaseProvider.login(phone.value, password.value)
     }
 

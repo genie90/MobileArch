@@ -6,7 +6,7 @@ import com.genie.network.ApiService
 import com.genie.network.model.AuthNetwork
 
 /**
- * Created by genie@gobear.com on 7/10/20.
+ * Created by viet.tr90@gmail.com on 7/10/20.
  */
 object NetworkProvider {
     enum class AvailableNetwork {
@@ -17,7 +17,7 @@ object NetworkProvider {
         return if (network == AvailableNetwork.FIREBASE) {
             AuthFirebase()
         } else {
-            AuthNetwork(ApiService.create(""))
+            AuthNetwork(ApiService.create("https://google.com"))
         }
     }
 }

@@ -8,7 +8,7 @@ import com.genie.network.model.respond.WrapperRespond
 import io.reactivex.rxjava3.core.Single
 import retrofit2.Call
 import retrofit2.Retrofit
-import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
+import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -23,8 +23,8 @@ interface ApiService{
     companion object {
         fun create(baseUrl: String): ApiService {
             val retrofit = Retrofit.Builder()
+                .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
-                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .baseUrl(baseUrl)
                 .build()
 

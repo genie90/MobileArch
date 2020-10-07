@@ -1,29 +1,19 @@
 package com.genie.repository.auth
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import com.genie.domain.entity.UserEntity
 import com.genie.domain.interfaces.AuthInterface
 import com.genie.domain.usecase.AuthUseCases
+import io.reactivex.rxjava3.core.Single
 
 /**
- * Created by genie@gobear.com on 7/10/20.
+ * Created by viet.tr90@gmail.com on 7/10/20.
  */
 object AuthRepository {
 
     private val authImpl: AuthInterface = NetworkProvider.getAuthMethod(NetworkProvider.AvailableNetwork.REST_API)
 
-    fun login(phone: String?, password: String?): LiveData<UserEntity> {
-
-        var respond: MutableLiveData<UserEntity> = MutableLiveData()
-        AuthUseCases(authImpl).doLogin(phone, password).subscribe { result: UserEntity?, t: Throwable? ->
-            if (t != null) {
-                // error
-                return@subscribe
-            }
-            respond.value = result
-        }
-        return respond
+    fun login(phone: String?, password: String?): Single<UserEntity> {
+        return AuthUseCases(authImpl).doLogin(phone, password)
     }
 
 }

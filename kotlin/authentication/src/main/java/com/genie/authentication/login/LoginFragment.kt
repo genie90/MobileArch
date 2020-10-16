@@ -1,4 +1,4 @@
-package com.genie.mvvm_clean_flowcoor.auth.login
+package com.genie.authentication.login
 
 import android.os.Bundle
 import android.text.Editable
@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
-import com.genie.mvvm_clean_flowcoor.R
+import com.genie.authentication.R
 
 class LoginFragment : Fragment() {
 

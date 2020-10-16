@@ -1,8 +1,8 @@
-package com.genie.mvvm_clean_flowcoor.auth.login
+package com.genie.authentication.login
 
 import androidx.lifecycle.*
 import com.genie.domain.entity.UserEntity
-import com.genie.mvvm_clean_flowcoor.utils.Utils.combineLatest
+import com.genie.authentication.utils.Utils.combineLatest
 import com.genie.repository.auth.AuthRepository
 
 class LoginViewModel : ViewModel() {

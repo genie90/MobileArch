@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.genie.mvvm_clean_flowcoor.auth.login.LoginFragment"
+        android:name="com.genie.authentication.login.LoginFragment"
         android:label="login_fragment"
         tools:layout="@layout/login_fragment" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerPhoneFragment"
-        android:name="com.genie.mvvm_clean_flowcoor.auth.register.RegisterPhoneFragment"
+        android:name="com.genie.authentication.register.RegisterPhoneFragment"
         android:label="register_phone_fragment"
         tools:layout="@layout/register_phone_fragment" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerPhoneOtpFragment"
-        android:name="com.genie.mvvm_clean_flowcoor.auth.register.RegisterPhoneOtpFragment"
+        android:name="com.genie.authentication.register.RegisterPhoneOtpFragment"
         android:label="register_phone_otp_fragment"
         tools:layout="@layout/register_phone_otp_fragment" />
 

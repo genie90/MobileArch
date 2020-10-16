@@ -1,4 +1,4 @@
-package com.genie.mvvm_clean_flowcoor.auth.register
+package com.genie.authentication.register
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.genie.mvvm_clean_flowcoor.R
+import com.genie.authentication.R
 
 class RegisterPhoneFragment : Fragment() {
 

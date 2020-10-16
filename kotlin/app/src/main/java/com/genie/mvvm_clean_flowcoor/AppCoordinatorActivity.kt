@@ -3,7 +3,7 @@ package com.genie.mvvm_clean_flowcoor
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
-import com.genie.mvvm_clean_flowcoor.auth.AuthCallback
+import com.genie.authentication.AuthCallback
 import com.genie.mvvm_clean_flowcoor.main.DashboardCallback
 
 class AppCoordinatorActivity : AppCompatActivity(), AuthCallback, DashboardCallback {

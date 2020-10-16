@@ -1,4 +1,4 @@
-package com.genie.mvvm_clean_flowcoor.auth.register
+package com.genie.authentication.register
 
 import androidx.lifecycle.ViewModel
 

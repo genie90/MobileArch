@@ -1,4 +1,4 @@
-package com.genie.mvvm_clean_flowcoor.utils
+package com.genie.authentication.utils
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData

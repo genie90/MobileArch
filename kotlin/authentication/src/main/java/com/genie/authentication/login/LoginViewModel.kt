@@ -1,11 +1,17 @@
 package com.genie.authentication.login
 
+import android.content.Context
+import androidx.hilt.Assisted
+import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.*
 import com.genie.domain.entity.UserEntity
 import com.genie.authentication.utils.Utils.combineLatest
 import com.genie.repository.auth.AuthRepository
 
-class LoginViewModel : ViewModel() {
+class LoginViewModel @ViewModelInject constructor(
+    private val repository: AuthRepository,
+    @Assisted private val savedStateHandle: SavedStateHandle
+) : ViewModel() {
 
     var phone: MutableLiveData<String> = MutableLiveData()
     var password: MutableLiveData<String> = MutableLiveData()
@@ -15,6 +21,6 @@ class LoginViewModel : ViewModel() {
         Transformations.map(phoneValid.combineLatest(passwordValid)) { (a, b) -> a && b }
 
     fun doLogin(): LiveData<UserEntity> {
-       return LiveDataReactiveStreams.fromPublisher<UserEntity> { AuthRepository.login(phone.value, password.value) }
+       return LiveDataReactiveStreams.fromPublisher { repository.login(phone.value, password.value) }
     }
 }

@@ -6,6 +6,7 @@ import com.genie.network.model.respond.LoginResult
 import com.genie.network.model.respond.SignUpResult
 import com.genie.network.model.respond.WrapperRespond
 import io.reactivex.rxjava3.core.Single
+import okhttp3.OkHttpClient
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
@@ -23,6 +24,7 @@ interface ApiService{
     companion object {
         fun create(baseUrl: String): ApiService {
             val retrofit = Retrofit.Builder()
+                .client(OkHttpClient())
                 .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
                 .baseUrl(baseUrl)

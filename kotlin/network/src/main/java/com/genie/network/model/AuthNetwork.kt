@@ -10,9 +10,7 @@ import java.net.HttpURLConnection.HTTP_OK
 /**
  * Created by viet.tr90@gmail.com on 2/8/20.
  */
-class AuthNetwork(apiService: ApiService) : AuthInterface {
-
-    private val authService: ApiService = apiService
+class AuthNetwork(private val authService: ApiService) : AuthInterface {
 
     override fun signUpWithPhone(phone: String): Any {
         return Any()

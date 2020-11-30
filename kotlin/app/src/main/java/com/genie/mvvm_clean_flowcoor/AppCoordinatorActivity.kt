@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import com.genie.authentication.AuthCallback
 import com.genie.mvvm_clean_flowcoor.main.DashboardCallback
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class AppCoordinatorActivity : AppCompatActivity(), AuthCallback, DashboardCallback {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,8 +20,6 @@ class AppCoordinatorActivity : AppCompatActivity(), AuthCallback, DashboardCallb
         var login = true
         if (login) {
             showHomeFlow()
-        } else {
-            showAuthFlow()
         }
     }
 

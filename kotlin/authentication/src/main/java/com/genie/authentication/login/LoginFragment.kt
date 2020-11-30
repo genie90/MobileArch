@@ -10,8 +10,8 @@ import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.navGraphViewModels
 import com.genie.authentication.R
 
 class LoginFragment : Fragment() {
@@ -20,8 +20,9 @@ class LoginFragment : Fragment() {
         fun newInstance() = LoginFragment()
     }
 
-    private lateinit var viewModel: LoginViewModel
-
+    val viewModel: LoginViewModel by navGraphViewModels(R.id.auth_nav_graph) {
+        defaultViewModelProviderFactory
+    }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -34,11 +35,8 @@ class LoginFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(LoginViewModel::class.java)
-
-        setupObservableObject(viewModel)
+        setupObservableObject()
     }
-
 
     private fun setupViewBehavior(v: View) {
         v.findViewById<AppCompatEditText>(R.id.loginPhone)
@@ -99,7 +97,7 @@ class LoginFragment : Fragment() {
             })
     }
 
-    private fun setupObservableObject(viewModel: LoginViewModel) {
+    private fun setupObservableObject() {
         viewModel.loginEnable.observe(this.viewLifecycleOwner,
             Observer { e -> view?.findViewById<AppCompatButton>(R.id.loginButton)?.isEnabled = e })
 

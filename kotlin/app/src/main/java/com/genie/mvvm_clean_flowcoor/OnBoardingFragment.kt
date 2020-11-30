@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.navGraphViewModels
 
 class OnBoardingFragment : Fragment() {
 
@@ -15,7 +15,9 @@ class OnBoardingFragment : Fragment() {
         fun newInstance() = OnBoardingFragment()
     }
 
-    private lateinit var viewModel: OnBoardingViewModel
+    private val viewModel: OnBoardingViewModel by navGraphViewModels(R.id.main_nav_graph) {
+        defaultViewModelProviderFactory
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,7 +26,6 @@ class OnBoardingFragment : Fragment() {
         val v: View = inflater.inflate(R.layout.on_boarding_fragment, container, false)
         setupViewBehavior(v)
         setupViewAction(v)
-        viewModel = ViewModelProvider(this).get(OnBoardingViewModel::class.java)
         setupObservableObject(viewModel)
         return v
     }
@@ -41,8 +42,6 @@ class OnBoardingFragment : Fragment() {
     }
 
     private fun setupObservableObject(viewModel: OnBoardingViewModel) {
-
-
     }
 
 }

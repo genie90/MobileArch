@@ -9,9 +9,9 @@ import com.genie.network.model.AuthNetwork
  * Created by viet.tr90@gmail.com on 7/10/20.
  */
 object NetworkProvider {
-    enum class AvailableNetwork {
-        FIREBASE,
-        REST_API
+    enum class AvailableNetwork() {
+        FIREBASE(),
+        REST_API()
     }
     fun getAuthMethod(network: AvailableNetwork): AuthInterface {
         return if (network == AvailableNetwork.FIREBASE) {

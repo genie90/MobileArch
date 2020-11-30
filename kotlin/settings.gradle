@@ -1,0 +1,8 @@
+rootProject.name='mvvm-clean-flowcoor'
+include ':app'
+include ':network'
+include ':domain'
+include ':repository'
+include ':localdatabase'
+include ':firebasenetwork'
+include ':authentication'

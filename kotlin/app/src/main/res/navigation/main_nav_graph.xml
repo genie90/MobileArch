@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/onBoardingFragment">
+
+    <include app:graph="@navigation/auth_nav_graph" />
+
+    <include app:graph="@navigation/dashboard_nav_graph" />
+
+    <action
+        android:id="@+id/action_authCoordinator_to_dashboardCoordinator"
+        app:destination="@id/dashboard_nav_graph" />
+
+    <action
+        android:id="@+id/action_dashboardCoordinator_to_authCoordinator"
+        app:destination="@id/auth_nav_graph" />
+
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.genie.mvvm_clean_flowcoor.OnBoardingFragment"
+        android:label="OnBoardingFragment"
+        tools:layout="@layout/on_boarding_fragment">
+        <action
+            android:id="@+id/action_onBoardingFragment_to_dashboard_nav_graph"
+            app:destination="@id/dashboard_nav_graph"
+            app:popUpTo="@id/onBoardingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

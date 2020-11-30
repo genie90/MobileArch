@@ -1,0 +1,10 @@
+{
+  "code": 200,
+  "message": "Request has been processed successfully!",
+  "data": {
+    "userId": "12345",
+    "email": "viet.tr90@gmail.com",
+    "token": "aefe851ff5394291b7eee7474c6efd47",
+    "phone": "+841212332123"
+  }
+}
